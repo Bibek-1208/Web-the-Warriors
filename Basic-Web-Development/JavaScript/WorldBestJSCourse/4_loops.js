@@ -115,6 +115,33 @@ else{
 //todo let's see the example
 //! Explain how the switch statement works and what will be the output when the variable day is set to different values.
 
+var day = 5;
+switch(day){
+    case 1:
+        console.log("Sunday");
+    break;
+    case 2:
+        console.log("Monday");
+    break;
+    case 3:
+        console.log("Tuesday");
+    break;
+    case 4:
+        console.log("Wednesday");
+    break;
+    case 5:
+        console.log("Thursday");
+    break;
+    case 6:
+        console.log("Friday");
+    break;
+    case 7:
+        console.log("Saturday");
+    break;
+    default:
+        console.log("Enter Valid Number");
+}
+
 //?=========================
 // ? Challenge time
 //? ==========================
