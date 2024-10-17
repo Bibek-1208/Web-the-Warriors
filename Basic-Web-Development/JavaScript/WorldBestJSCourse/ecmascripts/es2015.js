@@ -9,6 +9,9 @@
 //? let Keyword:  The let keyword is used to declare variables with block scope. Variables declared with let are mutable, meaning their values can be reassigned.
 //? const Keyword: The const keyword is used to declare variables with block scope, but once a value is assigned to a const variable, it cannot be reassigned. const variables are immutable.
 
+const myName = "Raj";
+console.log(myName);
+
 //* ==========================================
 //* TEMPLATE STRINGS - EcmaScript 2015
 //* =========================================
@@ -24,25 +27,27 @@
 
 //? String Interpolation:  Template strings support string interpolation, allowing you to embed expressions directly within the string. Interpolated expressions are enclosed in ${}
 
-// let age = 29;
+let age = 19;
 
 // String interpolation with variable
-// let message = `I am ${age} years old.`;
-// console.log(message);
+let message = `I am ${age} years old.`;
+console.log(message);
 
 // Multi-line Strings: Template strings make it easy to create multi-line strings without the need for concatenation or escape characters.
-// let multiLineString = `
-//   This is a multi-line
-//   string using template literals.
-//   It's much cleaner and easier to read.
-// `;
+let multiLineString = `
+  This is a multi-line
+  string using template literals.
+  It's much cleaner and easier to read.
+`;
 
-// console.log(multiLineString);
+console.log(multiLineString);
 
 //? Expression Evaluation: Template expressions can include any valid JavaScript expression.
 
 //! Practice Time
 // console.log("5 * " + num + " = " + 5 * num);
+let num = 5;
+console.log(`5 * ${num} = ${5 * num}`);
 
 //? Advantages:
 //? Readability: Template strings make the code more readable, especially for complex string constructions.
