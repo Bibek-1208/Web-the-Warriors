@@ -29,23 +29,53 @@ if (temperature > 30) {
 //* ===============================
 
 //! Requirements:
-// If the person is 18 years or older, a citizen, and registered to vote, display a message saying they are eligible to vote.
-// If the person is younger than 18, not a citizen, or not registered to vote, display a message saying they are not eligible to vote.
-// If the person is 18 or older but not a citizen, display a message saying they are not eligible due to citizenship status.
+//? If the person is 18 years or older, a citizen, and registered to vote, display a message saying they are eligible to vote.
+//? If the person is younger than 18, not a citizen, or not registered to vote, display a message saying they are not eligible to vote.
+//? If the person is 18 or older but not a citizen, display a message saying they are not eligible due to citizenship status.
 // If the person is 18 or older, a citizen, but not registered to vote, display a message saying they are not eligible due to registration status.
 // Extended voting eligibility checker with additional conditions
 
+// todo: age >= 18 -> citizen -> registered to vote -> msg(eligible to vote).
+// todo: age < 18 -> not citizen -> not registered to vote -> msg(not eligible to vote).
+// todo: age >= 18 -> not citizen -> not registered to vote -> msg(not eligible due to citizenship status).
+// todo: age >= 18 -> citizen -> not registered to vote -> msg(not eligible due to registration status).
+
 // Assume the user's age, citizenship status, and registration status as inputs
-// let userAge = 22;
-// let isCitizen = true; // Assume true for citizen, false for non-citizen
-// let isRegistered = false; // Assume false for not registered, true for registered
+let userAge = 22;
+let isCitizen = true; // Assume true for citizen, false for non-citizen
+let isRegistered = false; // Assume false for not registered, true for registered
 //! Check eligibility using if...else statements with multiple conditions
+
+if (userAge >= 18) {
+    if(isCitizen){
+        if(isRegistered){
+            console.log("you are eligible to vote");
+        }
+        else {
+            console.log("you are not eligible due to registration status");
+        }
+    }
+    else{
+        console.log("you are not eligible due to citizenship status");
+    }
+}
+else{
+    console.log("You are not eligible to vote!");
+}
 
 //* ===============================
 //* Interview Questions
 //* ===============================
 //! 1: Write a program to check if a number is even or odd.
+var checkNum = 6;
+if (checkNum % 2 == 0) {
+    console.log("Even Number");
+}
+else{
+    console.log("Num is Odd!");
+}
 //! 2: Write a program to check if a number is prime.
+console.log("");
 //todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
 //? All prime numbers greater than 2 are odd.
 //? However, not all odd numbers are prime.
