@@ -183,7 +183,7 @@ const calculator = (a, b, operator) => {
         default:
            return "no such operation found";
     }
-}
+};
 
 console.log(calculator(5, 2, "+"));
 console.log(calculator(5, 2, "-"));
@@ -192,5 +192,24 @@ console.log(calculator(50, 2, "/"));
 //! Reverse a String:
 //! Write a function to reverse a given string without using built-in reverse methods.
 
+const isReverse = (str) => {
+    let reverse = "";
+    for(let char = str.length - 1; char >= 0; char--) {
+        reverse = reverse + str[char];
+    }
+    return reverse;
+};
+
+console.log(isReverse("Rajkishore"));
 //! Palindrome Check:
 //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
+
+const palindrome = (str) => {
+    let reverse = "";
+    for(let char = str.length - 1; char >= 0; char--) {
+        reverse = reverse + str[char];
+    }
+    return str === reverse ? true : false;
+};
+
+console.log(palindrome("NaN"));
