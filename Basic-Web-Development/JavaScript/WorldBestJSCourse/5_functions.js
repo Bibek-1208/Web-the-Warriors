@@ -7,6 +7,39 @@
 
 // 1st student
 
+var a = 5,
+    b = 10;
+var sum1 = a + b;
+console.log(sum1);
+
+// 2st student
+
+var a = 15,
+    b = 15;
+var sum2 = a + b;
+console.log(sum2);
+
+// 3rd Student
+var a = 15,
+    b = 55;
+var sum3 = a + b;
+console.log(sum3);
+
+// let's make a reusable code
+
+function sum(a, b){
+    return a + b;
+}
+
+// 4th student 
+console.log(sum(5,5));
+
+// 5th student 
+console.log(sum(95,5));
+
+// 6th student 
+console.log(sum(950,50));
+
 //* ===============================
 //* Function Declaration:
 //* ==============================
@@ -14,9 +47,9 @@
 //? Declare a function using the function keyword, followed by the function name, parameters (if any), and the function body.
 //? This step defines the function and specifies what code should be executed when the function is called.
 
-// function greet() {
-//   console.log("Hello Guys, Welcome to Thapa Technical JS Course ");
-// }
+function greets() {
+  console.log("Hello Guys, Welcome to Thapa Technical JS Course ");
+}
 
 //* =================================================
 //* Function Invocation (Calling a Function):
@@ -26,7 +59,7 @@
 //? If the function has parameters, provide values (arguments) for those parameters inside the parentheses.
 
 //? How to call a function
-// greet();
+greets();
 
 //! Practice Time
 //! 1. Write a function to find the sum of two numbers.
@@ -34,6 +67,7 @@
 //todo Tips "1st declare the function & then call it" In JavaScript, it's a good practice to declare (define) your functions before you call them. This ensures that the function is available for use when you try to call it.
 
 // Function definition
+
 
 // Calling the function
 
@@ -61,17 +95,37 @@
 //? Let's say we want to greet students with one same line
 //! Write a JavaScript program that defines a function called greet to welcome individuals to the Thapa Technical JS Course. The function should take a name parameter and output the message "Hello [name], Welcome to Thapa Technical JS Course". Call the function twice, once with the argument "vinod" and once with the argument "ram".
 
+function greet(name){
+    console.log("Hello " + name + ", Welcome to thapa technical course");
+}
+
+console.log(greet("Raj"));
+greet("Ram");
+
 //! 1. Write a function to find the sum of two numbers with parameters.
+console.log(sum(1000, 1000));
 
 //* ==============================
 //* Function expressions
 //* ==============================
 //? A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it becomes a named function expression.
 
+var result = function mul(a, b) {
+    return a * b;
+}
+
+console.log(result(5,5));
+
 //* ==============================
 //*  Anonymous Function
 //* =============================
 //? An anonymous function is a function without a name. It can be created using either a function expression or a function declaration without a specified name.
+
+var div = function(a, b) {
+    return a / b;
+}
+
+console.log(div(15,5));
 
 //* ==============================
 //*  Return Keyword
@@ -92,6 +146,10 @@
 // (function () {
 //   // code to be executed
 // })();
+
+var minus = (function(a,b){
+    console.log(a - b);
+})(20,5);
 
 // !Practice Time ( IIFE with Parameters)
 
