@@ -183,6 +183,12 @@ switch(areaOfShapes){
 
 //* Simple while loop to count from 1 to 10 🧑‍💻
 
+var i = 1;
+while(i <= 10){
+    console.log(i);
+    i++;
+}
+
 //! practice 🧑‍💻
 //? let's create a table of 5
 
@@ -197,6 +203,12 @@ switch(areaOfShapes){
 // } while (condition);
 
 //* Simple do...while loop to count from 1 to 10 🧑‍💻
+
+var doNum = 1;
+do{
+    console.log(doNum);
+    doNum++;
+} while(doNum <= 10);
 
 //? Common Use Cases:
 // When you want to guarantee the execution of the loop body at least once.
