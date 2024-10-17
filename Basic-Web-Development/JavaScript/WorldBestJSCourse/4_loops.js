@@ -75,7 +75,16 @@ else{
     console.log("Num is Odd!");
 }
 //! 2: Write a program to check if a number is prime.
-console.log("");
+var num = -2;
+if(num === 0){
+    console.log("Number is Zero");
+}
+else if(num > 0){
+    console.log("Num is Positive");
+}
+else{
+    console.log("Number is Negative");
+}
 //todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
 //? All prime numbers greater than 2 are odd.
 //? However, not all odd numbers are prime.
