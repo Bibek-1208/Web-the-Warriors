@@ -89,6 +89,22 @@ else{
 //? All prime numbers greater than 2 are odd.
 //? However, not all odd numbers are prime.
 
+var num = 12;
+var isPrime = true;
+
+for(var i = 0; i < num; i++) {
+    if (num % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+if(isPrime){
+    console.log("Num is Prime");
+}
+else{
+    console.log("Num is not Prime");
+}
+
 //! 3: Write a program to check if a number is positive, negative, or zero.
 
 //* ===============================
@@ -194,6 +210,7 @@ while(i <= 10){
 
 var num = 1;
 while(num <= 10){
+    // console.log(`5 * ${num} = ${5 * num}`);
     console.log("5 * " + num + " = " + (5 * num));
     num++;
 }
@@ -221,6 +238,15 @@ do{
 // When the number of iterations is not known beforehand, and you want to validate the condition after the first iteration.
 
 //? Example: Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻
+
+let userInput;
+let positiveNumber;
+do{
+    userInput = prompt("Enter any Positive Number");
+    positiveNumber = parseFloat(userInput);
+} while(isNaN(positiveNumber) || positiveNumber < 0){
+    console.log("You enter a valid positive number: ", positiveNumber);
+}
 
 //* ===============================
 //* For Loop
@@ -259,6 +285,12 @@ for(i = 1; i <= 10; i++){
 
 //! practice :
 //! Calculate the sum of numbers from 1 to 10 using a for loop 🧑‍💻
+
+var sum = 0;
+for(var num = 1; num <= 10; num++){
+    sum = sum + num;
+}
+console.log(sum);
 
 //! Generating a Times Table:🧑‍💻
 //! Example 3: Generating a times table of 5 with a for loop.
