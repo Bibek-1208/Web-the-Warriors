@@ -192,6 +192,12 @@ while(i <= 10){
 //! practice 🧑‍💻
 //? let's create a table of 5
 
+var num = 1;
+while(num <= 10){
+    console.log("5 * " + num + " = " + (5 * num));
+    num++;
+}
+
 //* ===============================
 //* Do-While Loop
 //* ===============================
