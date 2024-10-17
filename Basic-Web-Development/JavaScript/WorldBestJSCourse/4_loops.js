@@ -231,6 +231,10 @@ do{
 
 //* Simple for loop to count from 1 to 10
 
+for(i = 1; i <= 10; i++){
+    console.log(i);
+}
+
 //? Key Point:
 // The initialization, condition, and iteration expressions are optional. You can omit any or all of them, but you must include the semicolons.
 //* The code for (;;) {} represents an infinite loop in JavaScript. This construct is commonly used when you want a loop to run indefinitely or until a break statement is encountered within the loop. It's equivalent to while (true) {}.
