@@ -239,14 +239,14 @@ do{
 
 //? Example: Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻
 
-let userInput;
-let positiveNumber;
-do{
-    userInput = prompt("Enter any Positive Number");
-    positiveNumber = parseFloat(userInput);
-} while(isNaN(positiveNumber) || positiveNumber < 0){
-    console.log("You enter a valid positive number: ", positiveNumber);
-}
+// let userInput;
+// let positiveNumber;
+// do{
+//     userInput = prompt("Enter any Positive Number");
+//     positiveNumber = parseFloat(userInput);
+// } while(isNaN(positiveNumber) || positiveNumber < 0){
+//     console.log("You enter a valid positive number: ", positiveNumber);
+// }
 
 //* ===============================
 //* For Loop
@@ -309,4 +309,19 @@ if((year % 4 === 0 && year % 100 != 0) || year % 400 === 0) {
 }
 else {
     console.log(year, "It's Not a leaf year");
+}
+
+//! Draw pattern with Asterisks: 🧑‍💻
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+for(var i = 1; i <= 5; i++) {
+    var pattern = "";
+    for(var j = 1; j <= i; j++){
+        pattern = pattern + " * ";
+    }
+    console.log(pattern);
 }
