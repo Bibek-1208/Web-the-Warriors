@@ -299,3 +299,14 @@ console.log(sum);
 
 //? More Practice
 //!1: program To check if a year is a leap year🧑‍💻
+//? if a year divisible by 4 and not divisible by 100, or
+// if a year divisible by 400,
+// then it is a leaf year. otherwise, it is not a leaf year.
+
+var year = 2024;
+if((year % 4 === 0 && year % 100 != 0) || year % 400 === 0) {
+    console.log("It's a leaf year");
+}
+else {
+    console.log(year, "It's Not a leaf year");
+}
