@@ -68,18 +68,31 @@ console.log(`5 * ${num} = ${5 * num}`);
 
 //! Write a function to find sum of two numbers? What if during function call user only passed one argument?
 
+function sum(a,b){
+    return a + b;
+}
+console.log(sum(10,20));
+
 //* ==========================================
 //*  FAT ARROW FUNCTION
 //* =========================================
 
 //? In ECMAScript 6 (ES6), arrow functions, also known as fat arrow functions, were introduced as a concise way to write anonymous functions.
 
-// const sum = function(a,b){
+//* Traditional Function
+// const sum1 = function(a,b){
 //     let result = `The sum of ${a} and ${b} is ${a + b}.`;
-//      console.log(result);
+//     console.log(result);
 // }
 
-// sum(5,5)
+// sum1(5,5);
+
+//* Modern Function (Fat Arrow)
+const sum1 = (a,b) => {
+    let result = `The sum of ${a} and ${b} is ${a + b}.`;
+    console.log(result);
+}
+sum1(5,5);
 
 //! How to convert the same in fat arrow function
 // Syntax
@@ -91,12 +104,13 @@ console.log(`5 * ${num} = ${5 * num}`);
 // todo NOTES
 
 //🚀 1: If the function body consists of a single expression, the braces {} and the return keyword can be omitted.
-// const sum = (a, b) => `The sum of ${a} and ${b} is ${a + b}`;
-// console.log(sum(5, 5));
+const sum2 = (a, b) => `The sum of ${a} and ${b} is ${a + b}`;
+console.log(sum2(15, 5));
 
 //🚀 2: If there is only one parameter, the parentheses () around the parameter list can be omitted.
-// const square = a => `The square of ${a} is  ${a * a}`;
-// console.log(square(5));
+const square = a => `The square of ${a} is  ${a * a}`;
+console.log(square(5));
 
 //🚀 3: If there are no parameters, use an empty set of parentheses ().
-// const greet = () => console.log('Plz LIKE SHARE & SUBSCRIBE!');
+const greet = () => console.log('Plz LIKE SHARE & SUBSCRIBE!');
+greet();
