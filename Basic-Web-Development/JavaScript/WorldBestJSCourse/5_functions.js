@@ -158,6 +158,37 @@ var minus = (function(a,b){
 //! Question 1: Calculator Function
 //! Write a JavaScript function calculator that takes two numbers and an operator as parameters and returns the result of the operation. The function should support addition, subtraction, multiplication, and division.
 
+//* no1, no2, operator
+
+const calculator = (a, b, operator) => {
+    let result;
+    switch(operator){
+        case "+":
+            result = a + b;
+            return result;
+        case "-":
+            result = a - b;
+            return result;
+        case "*":
+            result = a * b;
+            return result;
+        case "/":
+            if(b === 0){
+                console.log("0 is not allowed!");
+            }
+            else{
+                result = a / b;
+                return result;
+            }
+        default:
+           return "no such operation found";
+    }
+}
+
+console.log(calculator(5, 2, "+"));
+console.log(calculator(5, 2, "-"));
+console.log(calculator(50, 2, "/"));
+
 //! Reverse a String:
 //! Write a function to reverse a given string without using built-in reverse methods.
 
