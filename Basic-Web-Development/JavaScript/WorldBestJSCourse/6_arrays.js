@@ -17,29 +17,57 @@
 
 //? Using Array constructor
 
+let fruits = new Array("Apple", "Orange", "Mango");
+
 //? Using array literal
+let fruit = ["Apple", "Orange", "Mango"];
+console.log(fruit);
 
 //? we can also create an empty array
+
+let arr = [];
+console.log(typeof arr);
 
 //* ======================================
 //*  Accessing Elements:
 //* =====================================
 //?👉 Accessing Elements:  Array elements are accessed using zero-based indices.
 
+let bucket = ["Apple", "Orange", "Mango"];
+console.log(bucket);
+console.log(typeof bucket);
+console.log(bucket.length);
+console.log(bucket[1]);
+
 //* ======================================
 //*  Modifying Elements:
 //* =====================================
 //?👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.
 
+let collection = ["Apple", "Orange", "Mango"];
+collection[2] = "Banana";
+console.log(collection);
+
 //* =============================================
 //*  Array Traversal / Iterating Over Arrays
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
+
+let topCollection = ["Apple", "Mango", "Orange", "Banana", "Greps"];
+
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
 
+for(let item of topCollection) {
+    console.log(item);
+}
+
 //? 2: for in loop
 //* for...in Loop: The for...in loop is used to iterate over the properties (including indices) of an object.
+
+for(let item in collection) {
+    console.log(item);
+}
 
 // ? 3: forEach Method
 //* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
