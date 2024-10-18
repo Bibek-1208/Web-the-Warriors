@@ -179,12 +179,21 @@ console.log(result1);
 // indexOf(searchElement);
 // indexOf(searchElement, fromIndex);
 
+const result2 = numeric.indexOf(6, 5); //* ----->
+console.log(result2);
+
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
+
+const result3 = numeric.lastIndexOf(6, 5); //* <-----
+console.log(result3);
 
 //? 3: The includes method checks whether an array includes a certain element, returning true or false.
 // Syntax
 // includes(searchElement)
 // includes(searchElement, fromIndex)
+
+const result4 = numeric.includes(6);
+console.log(result4);
 
 //* =========================================
 //*  Filter in an Array
