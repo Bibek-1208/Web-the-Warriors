@@ -37,4 +37,5 @@ console.log(log2Value);
 
 // ! Generate Random Number
 // ? Math.random(): return random value every-time
-console.log(Math.random());
+console.log((Math.random() * 100).toFixed(3));
+console.log(Math.trunc(Math.random() * 100));
