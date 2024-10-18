@@ -154,12 +154,33 @@ data.splice(data.length,0, "OpenAI");
 console.log(data);
 
 //todo Challenge time
-// 1: Add Dec at the end of an array?
-// 2: What is the return value of splice method?
-// 3: Update march to March (update)?
+//? 1: Add Dec at the end of an array?
+//? 2: What is the return value of splice method?
+//? 3: Update march to March (update)?
 // 4: Delete June from an array?
 
-// const months = ["Jan", "march", "April", "June", "July"];
+const months = ["Jan", "march", "April", "June", "July"];
+console.log(months);
+
+//* 1:
+months.splice(months.length,0, "Dec");
+console.log(months);
+
+//* 2:
+console.log(months.splice(0,0, ""));
+
+//* 3:
+const updateIndex = months.indexOf("march");
+months.splice(updateIndex,1, "March");
+console.log(months);
+
+//* 4:
+const deleteIndex = months.indexOf("June");
+console.log(deleteIndex);
+months.splice(deleteIndex,1);
+console.log(months);
+
+
 
 //* =========================================
 //*  Searching in an Array
@@ -199,11 +220,22 @@ console.log(result4);
 //*  Filter in an Array
 //* =========================================
 //? Search +  Filter
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const metaData = [10, 20, 30, 40, 50, 40, 60, 90, 70, 80, 60, 90];
+console.log(metaData);
 
 //? 1: find Method: The find method is used to find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
 
+const result5 = metaData.find((curElem) => {
+    return curElem > 60;
+});
+console.log(result5);
+
 //? 2: findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
+const result6 = metaData.filter((curElem) => {
+    return curElem > 60;
+});
+console.log(result6);
 
 //* 3:  filter Method: The filter method creates a new array with all elements that pass the test implemented by the provided function.
 // syntax:
@@ -212,18 +244,31 @@ console.log(result4);
 
 // UseCase: In E-commerce website when we want to Remove or delete any product from addToCart page.
 //! Ex. le'ts say user wants to delete value 6.
-// let value = 6;
-// const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+let value = 6;
+const filterData = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+
+let updateCart = filterData.filter((curElem) => {
+    return curElem !== value;
+});
+
+console.log(updateCart);
 
 // Practice time
 // !Example 2: Filtering Products by Price
-// const products = [
-//   { name: "Laptop", price: 1200 },
-//   { name: "Phone", price: 800 },
-//   { name: "Tablet", price: 300 },
-//   { name: "Smartwatch", price: 150 },
-// ];
+const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Phone", price: 800 },
+  { name: "Tablet", price: 300 },
+  { name: "Smartwatch", price: 150 },
+];
+console.log(products);
 // Filter products with a price less than or equal to 500
+
+const filterProduct = products.filter((curElem) => {
+    return curElem.price <= 500;
+});
+
+console.log(filterProduct);
 
 // //! Filter unique values
 // const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
