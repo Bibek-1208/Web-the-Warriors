@@ -17,3 +17,17 @@ console.log(strMap);
 let intro = "My name is \'Raj\' \n & i am a \"CSE\" student.";
 console.log(intro);
 
+let text = "Hello Javascript, welcome to our world best Javascript course";
+
+let index = text.indexOf("Javascript");
+console.log(index);
+
+let index1 = text.lastIndexOf("Javascript");
+console.log(index1);
+
+let index2 = text.lastIndexOf("Javascript", 40);
+console.log(index2);
+
+let index3 = text.search(/javascript/i);
+console.log(index3);
+
