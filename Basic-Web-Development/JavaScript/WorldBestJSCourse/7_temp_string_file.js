@@ -28,6 +28,21 @@ console.log(index1);
 let index2 = text.lastIndexOf("Javascript", 40);
 console.log(index2);
 
+//* search()
 let index3 = text.search(/javascript/i);
 console.log(index3);
+
+//* match()
+let index4 = text.match("Javascript");
+console.log(index4);
+
+let index5 = text.match(/javascript/gi);
+console.log(index5);
+
+//* matchAll()
+let index6 = text.matchAll("Javascript");
+console.log(index6);
+
+//* spread operator
+console.log(...index6);
 
