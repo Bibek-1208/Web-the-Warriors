@@ -271,7 +271,12 @@ const filterProduct = products.filter((curElem) => {
 console.log(filterProduct);
 
 // //! Filter unique values
-// const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+const topData = [10, 20, 30, 40, 60, 50, 60, 70, 80, 90];
+
+// Something i don't mention -> 1 remain
+
+
+console.log([...new Set(topData)]); //...spread Operator
 
 //* =========================================
 //*  How to Sort and Compare an Array
@@ -279,7 +284,24 @@ console.log(filterProduct);
 //? How to Sort and Compare an Array
 //? Sorting an Array: The sort method sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings.
 
-// const fruits = ["Banana", "Apple", "Orange", "Mango"];
+const sortFruits = ["Banana", "Apple", "Orange", "Mango"];
+
+sortFruits.sort();
+console.log(sortFruits);
+
+const sortData = [10, 20, 30, 40, 60, 50, 60, 70, 80, 90];
+//? compare callBack function
+// Syntax
+// const sortedNumber = sortData.sort((a, b) => a - b);
+// if(a > b) return 1 => switch the order
+// if(b > a) return -1 => keep the order
+
+sortData.sort((a,b) => {
+    if(a > b) return -1;
+    if(b > a) return 1;
+});
+
+console.log(sortData);
 
 //* =========================================
 //*  Very Important Array Methods
@@ -290,15 +312,24 @@ console.log(filterProduct);
 // map() does not execute the function for empty elements.
 // map() does not change the original array.
 
-//? Map(), Reduce(), Filter()
-// map() creates a new array from calling a function for every array element.
-// map() does not execute the function for empty elements.
-// map() does not change the original array.
-
 // Original array of numbers
-// const numbers = [1, 2, 3, 4, 5];
+const arrNum = [1, 2, 3, 4, 5];
 
 // Using map to square each number and create a new array
+
+const squareMap = arrNum.map((curElem) => curElem * curElem);
+console.log(squareMap);
+
+
+// ! qt
+
+const words = ["apple", "mango", "banana", "cherry"];
+
+const result7 = words.map((curElem) => {
+    return curElem.toUpperCase();
+});
+
+console.log(result7);
 
 //? Reduce method
 // The reduce method in JavaScript is used to accumulate or reduce an array to a single value. It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result. The reduce method takes a callback function as its first argument and an optional initial value for the accumulator as the second argument.
@@ -314,3 +345,12 @@ console.log(filterProduct);
 // index (optional): The index of the current element being processed.
 // array (optional): The array reduce was called upon.
 // initialValue (optional): An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulator value.
+
+const productPrice = [1000, 800, 900, 799, 599, 472, 672];
+console.log(productPrice);
+
+const totalPrice = productPrice.reduce((sum, curElem) => {
+    return sum + curElem;
+}, 0);
+
+console.log(totalPrice);
