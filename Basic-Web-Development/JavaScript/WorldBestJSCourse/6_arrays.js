@@ -72,14 +72,40 @@ for(let item in collection) {
 // ? 3: forEach Method
 //* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
+fruits.forEach((curElement, index, arr) => {
+    console.log(`${curElement} ${index} ${arr}`);
+    console.log(arr);
+});
+
 // ? 4: map function
 //* map() creates a new array from calling a function for every array element. map() does not change the original array.
 
+// fruits.map((curElement, index, arr) => {
+//     console.log(`${curElement} ${index} ${arr}`);
+//     console.log(arr);
+// });
+
+const myMapArr =  fruits.map((curElement, index, arr) => {
+    return `My favorite fruits ${curElement}`;
+});
+console.log(myMapArr);
+console.log(fruits);
+
 //todo Practice Time
 //! write a program to Multiply each element with 2
-// const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 // forEach -  Performs an action on each element
+
+numbers.forEach((curElem) => {
+    console.log(curElem * 2);
+});
+
 // map -  Creates a new array with transformed elements
+
+const doubleValue = numbers.map((curElem) => {
+    return curElem * 2;
+});
+console.log(doubleValue);
 
 //* ==========================================================================
 //*  How to Insert, Add, Replace and Delete Elements in Array(CRUD) - p1
@@ -87,10 +113,27 @@ for(let item in collection) {
 
 //? 👉 How to Insert, Add, Replace and Delete Elements in Array(CRUD)
 
-//? 1: push(): Method that adds one or more elements to the end of an array.
+let employee = ["Alex", "Mia", "Maxi", "Ori", "Ema"];
+
+//? 1: push(): Method that adds one or more elements to the end of an array.'
+
+employee.push("Marry");
+console.log(employee);
+
 //? 2: pop(): Method that removes the last element from an array.
+
+employee.pop();
+console.log(employee);
+
 //? 3: unshift(): Method that adds one or more elements to the beginning of an array.
+
+employee.unshift();
+console.log(employee);
+
 //? 4: shift(): Method that removes the first element from an array.
+
+employee.shift();
+console.log(employee);
 
 //* ==========================================================================
 //*  what if, we want to add or remove anywhere in an elements - p2
