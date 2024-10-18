@@ -143,9 +143,15 @@ console.log(employee);
 
 //* syntax
 //? splice(start, deleteCount, item1, item2, /* …, */ itemN)
-// let fruits = ["apple", "orange", "banana", "mango"];
+let data = ["alphabet", "ms", "meta", "oracle"];
+console.log(data);
+
+data.splice(1,0, "jetBrains");
+console.log(data);
 
 //! what if you want to add the element at the end
+data.splice(data.length,0, "OpenAI");
+console.log(data);
 
 //todo Challenge time
 // 1: Add Dec at the end of an array?
@@ -161,7 +167,12 @@ console.log(employee);
 //?👉  Searching and Filter in an Array
 
 //? For Search we have - indexOf, lastIndexOf & includes
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numeric = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+const result = numeric.indexOf(6);
+console.log(result);
+const result1 = numeric.lastIndexOf(6);
+console.log(result1);
+
 
 //?1: indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 // syntax
