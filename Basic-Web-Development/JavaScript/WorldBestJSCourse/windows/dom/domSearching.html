@@ -46,18 +46,28 @@ querySelectorAll(selector) -->
       <div class="value"></div>
     </div>
     <script>
+
       let findElementById = document.getElementById("heading");
+      console.log(findElementById);
+      console.log(findElementById.innerHTML);
+      console.log(findElementById.innerText);
+      console.log(findElementById.textContent);
+
+
+      // let findElementById = document.getElementById("heading");
       // let findElementById = document.getElementById("#heading"); ❌
       const findElementByClassName =
         document.getElementsByClassName("list-of--nodes");
 
-      // console.log(...findElementByClassName);
+      console.log(...findElementByClassName);
 
-      // for (let elem of findElementByClassName) {
-      //   console.log(elem.innerHTML);
-      //   console.log(elem.innerText);
-      //   console.log(elem.textContent);
-      // }
+      for (let elem of findElementByClassName) {
+        console.log(elem.innerHTML);
+        console.log(elem.innerText);
+        console.log(elem.textContent);
+      }
+
+
 
       // console.log(findElementById.innerHTML);
       // console.log(findElementById.innerText);
@@ -69,16 +79,16 @@ querySelectorAll(selector) -->
 
       // Example using `textContent`: Prints text as it is in the markup, including hidden text and without considering styling.
 
-      // const getElementsByTagName = document.getElementsByTagName("li");
-      // // console.log(getElementsByTagName);
-      // // console.log(...getElementsByTagName);
-      // for (let name of getElementsByTagName) {
-      //   console.log(name);
-      // }
-      // const findElementByQuerySelector = document.querySelector("#heading");
-      // console.log(
-      //   (findElementByQuerySelector.innerText = "World Best JS Course")
-      // );
+      const getElementsByTagName = document.getElementsByTagName("li");
+      console.log(getElementsByTagName);
+      console.log(...getElementsByTagName);
+      for (let name of getElementsByTagName) {
+        console.log(name);
+      }
+      const findElementByQuerySelector = document.querySelector("#heading");
+      console.log(
+        (findElementByQuerySelector.innerText = "World Best JS Course")
+      );
 
       const findElementByQuerySelectorAll = document.querySelectorAll("li");
       console.log(findElementByQuerySelectorAll);
