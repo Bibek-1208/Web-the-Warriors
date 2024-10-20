@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="/windows/style.css">
+
+    <style>
+        body{
+            padding-left: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start Inline Event Handler -->
+    <h1>Inline Event</h1>
+    <button onclick="alert('welcome by onclick')">onclick</button>
+    <button ondblclick="alert('welcome by ondblclick')">ondblclick</button>
+    <button onmouseover="alert('Welcome by onmouseover')">onmouseover</button>
+    <!-- End Inline Event Handler -->
+    
+    <!-- Start Dom Event Handler -->
+    <h1>Dom Event Handler</h1>
+    <button id="btn">onclick</button>
+    <button id="myBtn">onmouseover</button>
+    <!-- End Dom Event Handler -->
+
+    <!-- Start AddEventListener Event Handler -->
+    <h1>AddEventListener Event Handler</h1>
+    <button id="btn2">onclick</button>
+    <button id="myBtn2">onmouseover</button>
+    <!-- End AddEventListener Event Handler -->
+     <script>
+        // document.getElementById("btn").onclick = function () {
+        //     alert('welcome by onclick');
+        // };
+
+        document.getElementById("btn").onclick = () => {
+            alert('welcome by onclick');
+        };
+
+        document.getElementById("myBtn").onmouseover = () => {
+            alert('Welcome by onmouseover')
+        };
+
+        // AddEventListener Event Handler
+        document.getElementById("btn2").addEventListener("click", () => {
+            alert('welcome by click');
+        });
+
+        document.getElementById("myBtn2").addEventListener("mouseover", () => {
+            alert('welcome by mouseover');
+        });
+
+     </script>
+</body>
+</html>
