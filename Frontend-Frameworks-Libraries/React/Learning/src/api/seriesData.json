@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Queen of Tears",
+        "id": "queen-of-tears",
+        "img_url":"public/images/queen-of-tears.jpg",
+        "rating": "9.8",
+        "description": "A small -town outsider in a wealthy circle, a frightening medical diagnosis, a business and financial conspiracy. Can a married couple survive it all?",
+        "cast": ["Kim Soo-hyun", "Kim Ji-won","Park Sung-hoon"],
+        "genre": ["Korean","Comedies", "Romantic TV"],
+        "watch_url": "https://www.netflix.com/in/title/81707950?s=a&trkid=13747225&trg=cp&vlang=en&clip=81765384"
+    },
+    {
+        "name": "Vincenzo",
+        "id": "vincenzo",
+        "img_url":"public/images/vincenzo.jpg",
+        "rating": "9.8",
+        "description": "",
+        "cast": ["Rajkishore Behera", "Tom Cruse","Jon Deep"],
+        "genre": ["Romanic", "Comedy"],
+        "watch_url": "https://www.netflix.com/in/title/81365087?s=a&trkid=13747225&trg=cp&vlang=en&clip=81406893"
+    },
+    {
+        "name": "Lock & Key",
+        "id": "lock-&-key",
+        "img_url":"public/images/lock-&-key.jpg",
+        "rating": "9.8",
+        "description": "",
+        "cast": ["Rajkishore Behera", "Tom Cruse","Jon Deep"],
+        "genre": ["Romanic", "Comedy"],
+        "watch_url": "https://www.netflix.com/in/title/80241239?s=a&trkid=13747225&trg=wha&vlang=en&clip=81629706"
+    },
+    {
+        "name": "Peaky Blinders",
+        "id": "peaky-blinders",
+        "img_url":"public/images/peaky-blinders.jpg",
+        "rating": "9.8",
+        "description": "",
+        "cast": ["Rajkishore Behera", "Tom Cruse","Jon Deep"],
+        "genre": ["Hunting", "Comedy"],
+        "watch_url": "https://www.netflix.com/in/title/80002479?s=a&trkid=13747225&trg=wha&vlang=en&clip=81616387"
+    },
+    {
+        "name": "Money Heist",
+        "id": "money-heist",
+        "img_url":"public/images/money-heist.jpg",
+        "rating": "9.8",
+        "description": "",
+        "cast": ["Rajkishore Behera", "Tom Cruse","Jon Deep"],
+        "genre": ["Romanic", "Comedy"],
+        "watch_url": "https://www.netflix.com/in/title/80192098?s=a&trkid=13747225&trg=wha&vlang=en&clip=81438294"
+    }
+]
