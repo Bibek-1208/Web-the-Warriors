@@ -8,9 +8,9 @@ This repository contains my learning and projects related to web development, fr
 ## Structure
 
 1. **Basic Web Development**
-   - HTML
-   - CSS
-   - JavaScript
+   - [HTML](Basic-Web-Development/HTML)
+   - [CSS](Basic-Web-Development/CSS)
+   - [JavaScript](Basic-Web-Development/JavaScript)
 
 2. **Frontend Frameworks & Libraries**
    - React, Vue, Angular
