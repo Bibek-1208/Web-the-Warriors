@@ -5,7 +5,7 @@ Web-the-Warriors – Unleashing the power of code to conquer the digital realm. 
 
 This repository contains my learning and projects related to web development, from basic web technologies like HTML, CSS, and JavaScript to advanced frameworks like React, Vue, and full-stack development. Each folder represents a category of technology and contains multiple projects that demonstrate my understanding and growth.
 
-## Structure
+## Repository Structure
 
 1. **Basic Web Development**
    - [HTML](Basic-Web-Development/HTML)
