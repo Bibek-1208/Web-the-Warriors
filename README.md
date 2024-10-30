@@ -13,16 +13,21 @@ This repository contains my learning and projects related to web development, fr
    - [JavaScript](Basic-Web-Development/JavaScript)
 
 2. **Frontend Frameworks & Libraries**
-   - React, Vue, Angular
+   - [React](Frontend-Frameworks-Libraries/React)
+   - [Vue](Frontend-Frameworks-Libraries/Vue)
+   - [Angular](Frontend-Frameworks-Libraries/Angular)
 
 3. **Backend Development**
-   - Node.js, Express.js
+   - [Node.js](Backend-Development/NodeJS)
+   - [Express.js](Backend-Development/Express)
 
 4. **Full-Stack Projects**
    - End-to-end projects with both frontend and backend code
 
 5. **Styling Frameworks**
-   - Bootstrap, TailwindCSS
+   - Bootstrap
+   - TailwindCSS
 
 6. **Advanced Frameworks**
-   - Next.js, Gatsby
+   - [Next.js]
+   - [Gatsby]
