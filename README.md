@@ -29,5 +29,5 @@ This repository contains my learning and projects related to web development, fr
    - TailwindCSS
 
 6. **Advanced Frameworks**
-   - [Next.js]
-   - [Gatsby]
+   - [Next.js](Advanced/NextJS)
+   - [Gatsby](Advanced/Gatsby)
