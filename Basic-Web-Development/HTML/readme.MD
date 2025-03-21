@@ -45,6 +45,8 @@ To start learning HTML:
    </body>
    </html>
 
+---
+
 ## Skill Levels
 ### Beginner
 - What is HTML?
