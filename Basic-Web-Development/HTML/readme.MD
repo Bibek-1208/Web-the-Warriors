@@ -3,23 +3,47 @@
 ## Introduction
 Welcome to **HTML-The-Complete-Guide**! This repository is designed to provide a complete and structured journey into learning HTML, from the basics to advanced topics. Whether you are a beginner starting with HTML or an advanced developer looking to refine your skills, this repository has something for you.
 
-## Repository Structure
-```
-📦 HTML-The-Complete-Guide
- ┣ 📂 beginner/ (Basic HTML elements, structure)
- ┣ 📂 intermediate/ (Forms, tables, media elements)
- ┣ 📂 advanced/ (Semantic HTML, accessibility, SEO)
- ┣ 📂 projects/ (Mini projects, real-world examples)
- ┣ 📂 tools/ (Editors, linters, validators)
- ┣ 📄 LICENSE
- ┣ 📄 README.md
-```
+## 📖 Table of Contents
+- [Introduction](#introduction)
+- [Repository Structure](#repository-structure)
+- [Setup](#setup)
+- [Skill Levels](#skill-levels)
+  - [Beginner](#beginner)
+  - [Intermediate](#intermediate)
+  - [Advanced](#advanced)
+- [Learning Resources](#learning-resources)
+- [Tools](#tools)
+- [Projects & Exercises](#projects--exercises)
+- [Future Goals](#future-goals)
 
-## Setup
-To get started with HTML:
-1. Install a text editor like [VS Code](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/).
-2. Create an HTML file (`index.html`) and start writing HTML code.
-3. Open the file in a browser to view the output.
+---
+
+## 📂 Repository Structure
+Each folder covers a different level of HTML learning:
+- **`beginner/`** → HTML basics like elements, attributes, structure.
+- **`intermediate/`** → Forms, tables, multimedia elements.
+- **`advanced/`** → Semantic HTML, accessibility, SEO.
+- **`projects/`** → Hands-on projects to apply your skills.
+- **`tools/`** → Recommended text editors, linters, and validators.
+
+---
+
+## ⚡ Setup
+To start learning HTML:
+1. Install a **code editor** like [VS Code](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/).
+2. Open a new file with `.html` extension.
+3. Write your first HTML code:
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>My First HTML Page</title>
+   </head>
+   <body>
+       <h1>Hello, World!</h1>
+   </body>
+   </html>
 
 ## Skill Levels
 ### Beginner
