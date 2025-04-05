@@ -1,0 +1,1 @@
+var result = sum(5, 5);

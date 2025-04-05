@@ -32,6 +32,17 @@
 // console.log(sum(15, 50));
 // console.log(sum(25, 750));
 
+
+// reusable code by  me for mul
+
+// function mul(a, b){
+//   return a * b;
+// }
+
+// console.log("free space for IT - " + mul(5, 3));
+// console.log("free space for CL - " + mul(10, 4));
+// console.log("free space for ME - " + mul(25, 5));
+
 //* ===============================
 //* Function Declaration:
 //* ==============================
@@ -91,12 +102,12 @@
 //! Practice Time
 //? Let's say we want to greet students with one same line
 //! Write a JavaScript program that defines a function called greet to welcome individuals to the Thapa Technical JS Course. The function should take a name parameter and output the message "Hello [name], Welcome to Thapa Technical JS Course". Call the function twice, once with the argument "vinod" and once with the argument "ram".
-// function greet(name) {
+// function greet(name) { //? parameter
 //   console.log("Hello " + name + ", Welcome to Thapa Technical JS Course");
 // }
 
-// greet("ram");
-// greet("sita");
+// greet("ram"); //? argument
+// greet("sita"); //? argument
 
 //! 1. Write a function to find the sum of two numbers with parameters.
 // function sum(a, b) {
@@ -215,15 +226,15 @@
 //! Reverse a String:
 //! Write a function to reverse a given string without using built-in reverse methods.
 
-const isReverse = (str) => {
-  let reverse = "";
-  for (let char = str.length - 1; char >= 0; char--) {
-    reverse = reverse + str[char];
-  }
-  return reverse;
-};
+// const isReverse = (str) => {
+//   let reverse = "";
+//   for (let char = str.length - 1; char >= 0; char--) {
+//     reverse = reverse + str[char];
+//   }
+//   return reverse;
+// };
 
-console.log(isReverse("vinod thapa"));
+// console.log(isReverse("vinod thapa"));
 
 //! Palindrome Check:
 //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
@@ -231,18 +242,18 @@ console.log(isReverse("vinod thapa"));
 // // isi     isi
 // radar
 // level
-const isPalindrome = (str) => {
-  let reverse = "";
-  for (let char = str.length - 1; char >= 0; char--) {
-    reverse = reverse + str[char];
-  }
-  //   if (str === reverse) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
+// const isPalindrome = (str) => {
+//   let reverse = "";
+//   for (let char = str.length - 1; char >= 0; char--) {
+//     reverse = reverse + str[char];
+//   }
+//   //   if (str === reverse) {
+//   //     return true;
+//   //   } else {
+//   //     return false;
+//   //   }
 
-  return str === reverse ? true : false;
-};
+//   return str === reverse ? true : false;
+// };
 
-console.log(isPalindrome("level"));
+// console.log(isPalindrome("level"));
