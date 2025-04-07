@@ -71,3 +71,66 @@ console.log(typeof myNumbers);
 //* Function in JavaScript
 //* ==============================
 
+function hello() {
+    console.log("Hello guys, how are you doing");
+}
+hello();
+
+function sum(a, b){
+    return a + b;
+}
+console.log("free space for IT - " + sum(5, 5));
+console.log("free space for CL - " + sum(15, 50));
+
+//* ========== Function expressions ==========
+
+//? Named
+var result  = function addition(a, b){
+    console.log(a + b);
+};
+result(10, 10);
+
+//? anonymous
+var results = function (a, b){
+    console.log(a + b);
+}
+results(10, 10);
+
+// ! Question & answer
+const calculator = (num1, num2, operator) => {
+    let result;
+    switch (operator) {
+        case "+":
+            return num1 + num2;
+        case "-":
+            return num1 - num2;
+        case "*":
+            return num1 * num2;
+        case "/":
+            if (num2 === 0) {
+                return "Error: Division by zero";
+            }
+            return num1 / num2;
+        default:
+            return "Error: Invalid operator";
+    }
+}
+
+// ? reverse a string
+const isReverse = (str) => {
+    let reverse = "";
+    for (let char = str.length -1; char>= 0; char--){
+        reverse = reverse + str[char];
+    }
+    return reverse;
+}
+
+// ? Palindrome Check
+const isPalindrome = (str) => {
+    let reverse = "";
+    for (let char = str.length - 1; char >= 0; char--) {
+        reverse += str[char];
+    }
+    return str === reverse ? true : false;
+}
+console.log(isPalindrome("mama"));
