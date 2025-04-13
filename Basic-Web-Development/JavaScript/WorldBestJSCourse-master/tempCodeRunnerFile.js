@@ -134,3 +134,66 @@ const isPalindrome = (str) => {
     return str === reverse ? true : false;
 }
 console.log(isPalindrome("mama"));
+
+
+//* ======================================
+//* Modern JavaScript - EcmaScript 2015
+//* =====================================
+
+//* ========== LET AND CONST ==========
+const name1 = "raj";
+console.log(name1);
+name1 = "max";
+console.log(name1);
+
+let name2 = "Raj";
+console.log(name2);
+name2 = "danial";
+console.log(name2);
+
+//* ========== TEMPLATE STRINGS ==========
+
+let fName = "Travis";
+let lName = "Head";
+let fullName = `${fName} ${lName}`;
+
+//? String Interpolation:
+let myAge = 19;
+let message = `I am ${age} years old.`;
+console.log(message);
+
+// Multi-line Strings:
+let multiLineString = `
+  This is a multi-line
+  string using template literals.
+  It's much cleaner and easier to read.
+`;
+console.log(multiLineString);
+
+//? Expression Evaluation:
+let num = 10;
+console.log(`10 * ${num} = ${10 * num}`);
+
+//* ========== FAT ARROW FUNCTION ==========
+const sum = (a, b) =>
+    console.log(`The sum of ${a} and ${b} is ${a + b}.`)
+;
+sum(1495,5);
+
+//?🚀 1: single expression braces {} can be omitted.
+const min = (a, b) =>
+    `The sum of ${a} and ${b} is ${a + b}`
+;
+min(1505,5);
+
+//? 🚀 2: only one parameter, the parentheses () can be omitted.
+const mul = (a) =>
+    `The square of ${a} is ${a * a}`
+;
+mul(10);
+
+//? 🚀 3: If there are no parameters, use an empty set of parentheses ().
+const slog = () =>
+    console.log("Hello EveryOne")
+;
+slog();
