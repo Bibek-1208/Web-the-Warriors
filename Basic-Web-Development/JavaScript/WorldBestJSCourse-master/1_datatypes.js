@@ -176,3 +176,37 @@
 // }
 
 //* ========== parseInt & parseFloat End Section ==========
+
+
+//* ============================
+//* Data Types Section my work
+//* ============================
+
+var myNum = 24;
+console.log(myNum);
+console.log(typeof myNum);
+
+var myName = "raj";
+console.log(myName);
+console.log(typeof myName);
+console.log(typeof +myNum);
+
+var isRaining = true;
+console.log(isRaining);
+console.log(typeof isRaining);
+
+var undef;
+console.log(undef);
+console.log(typeof undef);
+
+var memories = null;
+console.log(memories);
+console.log(typeof memories);
+
+var bigNum = 489348983490234903902349802347345903450234823490234n;
+console.log(bigNum);
+console.log(typeof bigNum);
+
+var mySymbol = Symbol("unique");
+console.log(mySymbol);
+console.log(typeof mySymbol);

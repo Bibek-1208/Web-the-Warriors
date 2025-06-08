@@ -28,3 +28,17 @@ var $cityName = "New York";
 
 // var my@Email = "john@example.com";
 //? Explanation: This is not a valid variable name. It includes the special character '@', which is not allowed in JavaScript variable names. Only letters, numbers, underscores, and dollar signs are allowed.
+
+var name = "Rajkishore Behera";
+var age = 19;
+var isStudent = true;
+var height = 5.9; // in feet
+var subjects = ["Math", "Science", "English"]; // array of subjects
+var address = {
+  street: "123 Main St",
+  city: "Bhubaneswar",
+  state: "Odisha"
+}; // object representing an address
+console.log(name, age, isStudent, height, subjects, address);
+
+//? Explanation: This code declares several variables with different data types. It includes a string, a number, a boolean, a float, an array, and an object. Each variable is assigned a value that can be used later in the program.
