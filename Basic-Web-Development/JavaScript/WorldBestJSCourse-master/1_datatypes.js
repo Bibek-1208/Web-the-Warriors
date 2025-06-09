@@ -254,3 +254,20 @@ console.log(parseInt("xyz")); // NaN
 
 console.log(isNaN("raj")); // true
 console.log(isNaN("123")); // false
+
+if(NaN == NaN) {
+    console.log("both are equal");
+} else {
+    console.log("not equal");
+}
+
+// More on data types
+console.log(10 + "20"); // "1020" (string concatenation)
+console.log(9 - "5");
+console.log("Java" + "Script"); // "JavaScript" (string concatenation)
+console.log("" + "");
+console.log("" + o);
+console.log("vinod" - "thapa");
+console.log(true + true); // 2 (boolean to number conversion)
+console.log(true + false); // 1 (boolean to number conversion)
+console.log(false + false); // 0 (boolean to number conversion)
