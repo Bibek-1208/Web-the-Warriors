@@ -210,3 +210,47 @@ console.log(typeof bigNum);
 var mySymbol = Symbol("unique");
 console.log(mySymbol);
 console.log(typeof mySymbol);
+
+var str = 10;
+console.log(str);
+console.log(typeof str);
+console.log(typeof String(str));
+console.log(typeof str.toString());
+console.log(typeof (str + ""));
+
+// Truty or Falsy value
+var myDay = "";
+if (myDay) {
+    console.log("This is a truthy value");
+} else {
+    console.log("This is a falsy value");
+}
+
+//* ========== parseInt & parseFloat Section ==========
+
+var myString = "123.45";
+var myInt = parseInt(myString);
+console.log(myInt); // Output: 123
+
+var myString = "123.45";
+var myInt = parseFloat(myString);
+console.log(myInt);
+
+console.log(parseInt("123")); // 123
+console.log(parseInt("123", 10)); // 123
+console.log(parseInt("   123 ")); // 123
+console.log(parseInt("077")); // 77
+console.log(parseInt("1.9")); // 1
+
+console.log(parseFloat("123")); // 123
+console.log(parseFloat("123", 10)); // 123
+console.log(parseFloat("   123 ")); // 123
+console.log(parseFloat("077")); // 77
+console.log(parseFloat("1.9")); // 1.9
+
+console.log(parseInt("@123")); // NaN
+console.log(parseInt("-123")); // -123
+console.log(parseInt("xyz")); // NaN
+
+console.log(isNaN("raj")); // true
+console.log(isNaN("123")); // false
