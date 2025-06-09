@@ -363,3 +363,54 @@ if (num === 0) {
 //   }
 //   console.log(pattern);
 // }
+
+//* ============================
+//* My Work Section
+//* ============================
+
+// If Statement
+var temp = 40;
+if (temp > 35 ) {
+  console.log("lets go to beach");
+} else {
+  console.log("let's stay at hotel");
+}
+
+var age = 40;
+if (age < 18) {
+  console.log("you are teenager");
+} else if (age >= 18 && age < 80) {
+  console.log("you are adult");
+} else {
+  console.log("you are senior citizen");
+}
+
+var age = 20;
+var isCitizen = true; // Assume true for citizen, false for non-citizen
+var isRegistered = true; // Assume false for not registered, true for registered
+// Check eligibility using if...else statements with multiple conditions
+if (age >= 18 && isCitizen && isRegistered) {
+  console.log("You are eligible to vote");
+} else if (age)
+
+//! problem to solve it
+
+// ...existing code...
+
+var age = 20;
+var isCitizen = true; // Assume true for citizen, false for non-citizen
+var isRegistered = true; // Assume false for not registered, true for registered
+
+if (age >= 18 && isCitizen && isRegistered) {
+  console.log("You are eligible to vote");
+} else if (age < 18 || !isCitizen || !isRegistered) {
+  if (age < 18) {
+    console.log("You are not eligible to vote (Younger)");
+  } else if (!isCitizen) {
+    console.log("You are not eligible due to citizenship status");
+  } else if (!isRegistered) {
+    console.log("You are not eligible due to registration status");
+  }
+}
+
+// ...existing code...
