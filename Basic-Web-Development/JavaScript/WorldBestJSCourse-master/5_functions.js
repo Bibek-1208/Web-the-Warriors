@@ -257,3 +257,70 @@
 // };
 
 // console.log(isPalindrome("level"));
+
+//* ============================
+//* My Work Section
+//* ============================
+
+function mark (a, b) {
+    return a + b;
+}
+console.log(mark(10, 20));
+
+var stu1 = mark(150, 410);
+console.log("The total marks of student 1 is " + stu1);
+var stu2 = mark(230, 290);
+console.log("The total marks of student 2 is " + stu2);
+var stu3 = mark(370, 160);
+console.log("The total marks of student 3 is " + stu3);
+
+function great(){
+    console.log("Hello World");
+}
+great();
+
+function great(name){
+    console.log("Hello " + name + ", Welcome to Thapa Technical JS Course");
+}
+great("Raj");
+great("ram");
+
+// function expression
+var result = function exp(a, b){
+    console.log(a + b);
+}
+result(10, 15);
+
+// Anonymous Function
+var result = function (a, b) {
+    console.log(a * b);
+};
+result(10, 10);
+
+// Return Keyword - i dit it on top
+
+var minus = function min (a, b){
+    console.log("this is minus operation");
+    return (a - b);
+}
+// console.log(min(10, 5)); x due to var declaration.
+// minus();
+// console.log(minus(100, 50));
+
+// IIFE - immediately invoked function expression
+// function div (a, b) {
+//     console.log(a / b);
+// }
+// div(10, 2);
+
+// (function (a, b) {
+//     console.log(a / b);
+// })(100, 2);
+
+var data = (function (a, b) {
+    console.log(a / b);
+    return a / b;
+})(100, 2);
+console.log("The result of IIFE is " + data);
+
+// end yet
