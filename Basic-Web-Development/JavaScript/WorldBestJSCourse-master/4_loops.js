@@ -391,26 +391,190 @@ var isRegistered = true; // Assume false for not registered, true for registered
 // Check eligibility using if...else statements with multiple conditions
 if (age >= 18 && isCitizen && isRegistered) {
   console.log("You are eligible to vote");
-} else if (age)
-
-//! problem to solve it
-
-// ...existing code...
-
-var age = 20;
-var isCitizen = true; // Assume true for citizen, false for non-citizen
-var isRegistered = true; // Assume false for not registered, true for registered
-
-if (age >= 18 && isCitizen && isRegistered) {
-  console.log("You are eligible to vote");
 } else if (age < 18 || !isCitizen || !isRegistered) {
   if (age < 18) {
     console.log("You are not eligible to vote (Younger)");
   } else if (!isCitizen) {
     console.log("You are not eligible due to citizenship status");
-  } else if (!isRegistered) {
+  } else if(!isRegistered) {
     console.log("You are not eligible due to registration status");
   }
 }
 
-// ...existing code...
+var num = 10;
+if (num % 2 == 0) {
+  console.log("Num is even");
+} else  {
+  console.log("Num is odd");
+}
+
+var num = 14;
+var isPrime = true;
+
+for (var i = 2; i < num; i++){
+  if (num % i == 0) {
+    isPrime = false;
+    break
+  }
+}
+if (isPrime) {
+  console.log("Num is prime");
+} else {
+  console.log("Num is not prime");
+}
+
+var num = -20;
+
+if(num == 0) {
+  console.log("Num is zero");
+} else if (num > 0) {
+  console.log("Num is positive");
+} else {
+  console.log("Num is negative");
+}
+
+// Switch Statement
+
+var time = "night";
+
+switch (time) {
+  case "morning":
+    console.log("Good Morning, time for study");
+    break;
+  case "afternoon":
+    console.log("Good Afternoon, time for lunch");
+    break;
+  case "evening":
+    console.log("Good Evening, time for relax");
+    break;
+  case "night":
+    console.log("Good Night, time for sleep");
+    break;
+}
+
+
+var area = "triangle";
+var a = 5;
+var b = 10;
+var result;
+
+switch(area) {
+  case "square":
+    result = a * a;
+    console.log("Area of square is: " + result);
+    break;
+  case "rectangle":
+    result = a * b;
+    console.log("Area of rectangle is: " + result);
+    break;
+  case "circle":
+    result = 3.14 * (a * a);
+    console.log("Area of circle is: " + result);
+    break;
+  case "triangle":
+    result = 0.5 * a * b;
+    console.log("Area of triangle is: " + result);
+    break;
+  default:
+    console.log("Sorry, the shape is not available.");
+}
+
+
+// While Loop
+var num = 1;
+while(num <= 10) {
+  console.log(num);
+  num++;
+}
+
+var num = 1;
+while(num <= 10) {
+  console.log("5 * " + num + " = " + (5 * num));
+  num++;
+}
+
+
+
+// do-While Loop
+var num = 1;
+do{
+  console.log(num);
+  num++;
+} while(num <= 10);
+
+var num = 1;
+do{
+  console.log("15 * " + num + " = " + (15 * num));
+  num++;
+} while(num <= 10);
+
+// let userInput;
+// let positiveNumber;
+// do {
+//   userInput = prompt("Enter any positive number");
+//   positiveNumber = parseFloat(userInput);
+// } while (
+//   isNaN(positiveNumber) || positiveNumber < 0
+// );
+// console.log(positiveNumber);
+
+// for Loop
+for(var num = 1; num <= 10; num++) {
+  console.log(num);
+}
+
+for(var num = 1; num <= 10; num++) {
+  console.log("25 * " + num + " = " + (25 * num ));
+  // debugger;
+}
+
+for (;;){
+  console.log("This is an infinite loop");
+  break; // Remove this line to create an actual infinite loop
+}
+
+// Homework: Calculate the sum of numbers from 1 to 10 using a for loop
+
+// for (var num = 1; num <= 10; num++) {
+//   console.log("8 * " + num + " = " + (8 * num));
+//   console.log("9 * " + num + " = " + (9 * num));
+//   console.log("12 * " + num + " = " + (12 * num));
+//   console.log("15 * " + num + " = " + (15 * num));
+// }
+
+// JavaScript program to print table for given numbers (8, 9, 12, 15) using for loop
+
+var numbers = [8, 9, 12, 15];
+
+for (var i = 0; i < numbers.length; i++) {
+  var num = numbers[i];
+  console.log("Table of " + num + ":");
+  for (var j = 1; j <= 10; j++) {
+    console.log(num + " * " + j + " = " + (num * j));
+  }
+  console.log(""); // Blank line between tables
+}
+
+// JavaScript program to check if a year is a leap year
+
+var year = 2028;
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  console.log(year, "is a leap year");
+} else {
+  console.log(year, "is not a leap year");
+}
+
+// Drawing Patterns with Asterisks
+
+for(var i = 1; i <= 5; i++) {
+  var value = " ";
+  for(var j = 1; j <= i; j++) {
+    value += " * ";
+  }
+  console.log(value);
+}
+
+for(var i = 1; i <= 5; i++) {
+  console.log(" * ".repeat(i));
+}
+// done yet
