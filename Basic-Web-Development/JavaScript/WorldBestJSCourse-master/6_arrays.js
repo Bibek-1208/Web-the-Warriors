@@ -409,3 +409,9 @@ const totalPrice = productPrice.reduce((accum, curElem) => {
 }, 0);
 
 console.log(totalPrice);
+
+
+//* ============================
+//* My Work Section
+//* ============================
+
