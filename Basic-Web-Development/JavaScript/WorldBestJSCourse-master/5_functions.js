@@ -323,4 +323,47 @@ var data = (function (a, b) {
 })(100, 2);
 console.log("The result of IIFE is " + data);
 
-// end yet
+
+// calculator
+const calculator = (var1, num2, operator) => {
+    let result;
+    switch (operator) {
+        case "+":
+            result = var1 + num2;
+            return result;
+            break;
+
+        case "-":
+            result = var1 - num2;
+            return result;
+            break;
+
+        case "*":
+            result = var1 * num2;
+            return result;
+            break;
+
+        case "/":
+            if (num2 === 0){
+                console.log("0 is not allowed");
+            } else {
+                result = var1 / num2;
+                return result;
+            }
+            break;
+
+        case "%":
+            result = var1 % num2;
+            return result;
+            break;
+
+        default:
+            return "No operator found";
+    }
+}
+console.log(calculator(5, 2, "+")); // Output: 7
+console.log(calculator(8, 4, "-")); // Output: 4
+console.log(calculator(10, 2, "/")); // Output: 5
+
+
+// 
