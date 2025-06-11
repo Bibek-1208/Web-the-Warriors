@@ -313,4 +313,124 @@ console.log(sum(1, 2, 3, 4));
 // myName = "Rajkishore Behera";
 // console.log(myName);
 
-// 
+// var name = "Behera";
+// if (true) {
+//   name = "Raj";
+//   console.log(name);
+// }
+// name = "Rajkishore";
+// console.log(name);
+
+
+// let name2 = "Behera";
+// if (true) {
+//   name2 = "Raj";
+//   console.log(name2);
+// }
+// name2 = "Rajkishore";
+// console.log(name2);
+
+
+// const name3 = "Behera";
+// if (true) {
+//   name3 = "Raj";
+//   console.log(name3);
+// }
+// name3 = "Rajkishore";
+// console.log(name3);
+
+
+// if (true) {
+//   let myName = "Raj";
+//   console.log(myName);
+// }
+// myName = "Alex";
+// console.log(myName);
+
+
+// if (true) {
+//   let myName = "Raj";
+//   console.log(myName);
+// }
+// // myName = "Alex";
+// console.log(myName);
+
+
+// TEMPLATE STRINGS - EcmaScript 2015
+
+let fName = "Raj";
+let lName = "Behera";
+
+let fullName = fName + " " + lName;
+let fullName2 = `${fName} ${lName}`;
+console.log(fullName);
+console.log(fullName2);
+
+
+// old way of doing it
+let age = 30;
+let msg = ("I am" + " " + age + " " + "Years old");
+console.log(msg);
+
+// new way of doing it
+let myAge = 18;
+let message = `I am ${myAge} years old`;
+console.log(message);
+
+
+let num = 5;
+console.log("5 * " + num + " = " + (5 * num));
+console.log(`5 * ${num} = ${5 * num}`);
+
+// eassy looping
+for(let i = 1; i <= 10; i++) {
+  console.log(`5 * ${i} = ${5 * i}`);
+}
+
+
+
+// DEFAULT Parameters
+
+// with out default parameters
+function min(a, b) {
+  return a + b;
+}
+console.log(min(5, 10)); // Output: 15
+console.log(sum(5)); // Output: NaN (b is undefined)
+
+// with default parameters
+function mul(a, b = 10) {
+  return a * b;
+}
+console.log(mul(5)); // Output: 50
+
+
+// FAT ARROW FUNCTION
+
+// Traditional function
+function mul(a, b = 10) {
+  return a * b;
+}
+console.log(mul(15));
+
+// Fat arrow function
+const multiply = (a, b = 10) => {
+  return a * b;
+}
+console.log(multiply(15));
+// Fat arrow function with implicit return
+
+const result = (a, b = 10) => a * b;
+console.log(result(8));
+
+
+// tot do
+// Fat arrow function with single parameter
+const square = a => a * a;
+console.log(square(5));
+
+// Fat arrow function with no parameters
+const greet = () => console.log("Hello, World!");
+greet();
+
+// done yet

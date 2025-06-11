@@ -409,3 +409,113 @@ const totalPrice = productPrice.reduce((accum, curElem) => {
 }, 0);
 
 console.log(totalPrice);
+
+
+//* ============================
+//* My Work Section
+//* ============================
+
+const person1 =" ram";
+const person2 = "raj";
+const person3 = "rat";
+
+// insted of indifisual we do
+
+const person = ["ram", "raj", "rat"];
+
+console.log(person.at(-1)); // Accessing the last element using at() method
+
+ var Pname = "";
+for(let i = 0; i < person.length; i++) {
+  // console.log(person[i]);
+
+  Pname += person[i];
+  if (i < person.length - 1) {
+    Pname += ", "; // Add a comma and space between names
+  }
+}
+console.log(Pname);
+
+let arr = [];
+console.log(typeof arr); // Output: object
+console.log(arr instanceof Array); // Output: true
+console.log(Array.isArray(arr)); // Output: true
+console.log(arr.length); // Output: 0
+console.log(arr[0]); // Output: undefined (no elements in the array)
+// Adding elements to the array
+arr.push("apple");
+arr.push("banana");
+console.log(arr); // Output: ["apple", "banana"]
+console.log(arr.length); // Output: 2
+console.log(arr[0]); // Output: "apple"
+console.log(arr[1]); // Output: "banana"
+
+
+// creating arr using Array constructor
+let fruits = new Array("apple", "bannana", "orange");
+console.log(fruits);
+
+// creating array using array literal
+let gun = ["ak47", "M82", "mp40", "m4a1", "m16", "ump", "mp5"];
+console.log(gun);
+
+// Accessing elements in an array
+console.log(gun[0]);
+console.log(gun[3]);
+console.log(gun[5]);
+console.log(gun[8]);
+
+// add element in aan array
+gun.push("p90");
+gun.push("m14");
+console.log(gun);
+
+// Modifying elements in an array
+gun[1] = "thomson";
+console.log(gun);
+
+
+//?👉 Array Traversal / Iterating Over Arrays
+for (let item of gun) {
+  console.log(item);
+}
+
+
+//? 2: for in loop
+for (let item in gun) {
+  console.log(item);
+}
+
+
+// ? 3: forEach Method
+
+// traditional method with out fat arrow
+gun.forEach(function
+callback (currentValue, index, array) {
+
+  // your logic here
+
+  // console.log(currentValue, index, array);
+
+  console.log("Gun: " + currentValue, "Index: "+ index, "Array: " + array);
+});
+
+
+// mordern method with out fat arrow
+gun.forEach((curElem, index, arr) => {
+  // your logic here
+  console.log(`Gun: ${curElem}, Index: ${index}, Array: ${arr}`);
+  
+});
+
+
+// ? 4: map function
+fruits.map((curElem, index, arr) => {
+   console.log(`Fruit: ${curElem}, Index: ${index}, Array: ${arr}`);
+
+  // return `My favorite fruit is ${curElem}`; use when you store funtionm ona variable
+});
+
+
+
+//todo Practice Time
