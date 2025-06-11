@@ -251,3 +251,52 @@
 // console.log(2 < 12 < 5);
 
 // console.log("20" + 10 + 10);
+
+
+//* ============================
+//* My Work Section
+//* ============================
+
+// Assignment operators
+var asg = 5;
+console.log(asg);
+
+// Arithmetic operators
+console.log(45 + 35);
+console.log(45 - 35);
+console.log(45 * 35);
+console.log(45 / 35);
+console.log(45 % 35);
+
+// In arithmetic we increment and decrement operator.
+// Comparison operators
+console.log(5 == "5"); // Equal
+console.log(5 === "5"); // Strict Equal
+console.log(5 != 5); // Not Equal
+console.log(5 > 2); // Greater Than
+console.log(5 < 10); // Less Than
+console.log(10 >= 10); // Greater Than or Equal To
+console.log(5 <= 10); // Less Than or Equal To
+
+// Logical operators
+    //* && (logical AND (&&))
+console.log(5 > 0 && 10 < 0); // false
+
+    //* || (logical OR (||))
+console.log(5 > 0 || 10 > 0); // true
+
+    //* !  (logical NOT (!))
+console.log(!false); // true
+console.log(!true); // false
+
+// String operators
+console.log("Hello" + " " + "World!");
+
+// Conditional (ternary) operator
+var age = 19;
+var isEligibleForDrive = age >= 18 ? "Yes" : "No";
+console.log(isEligibleForDrive);
+
+var mark = 25;
+var result = mark >= 35 ? "pass" : "fail";
+console.log(result);

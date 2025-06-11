@@ -176,3 +176,98 @@
 // }
 
 //* ========== parseInt & parseFloat End Section ==========
+
+
+//* ============================
+//* Data Types Section my work
+//* ============================
+
+var myNum = 24;
+console.log(myNum);
+console.log(typeof myNum);
+
+var myName = "raj";
+console.log(myName);
+console.log(typeof myName);
+console.log(typeof +myNum);
+
+var isRaining = true;
+console.log(isRaining);
+console.log(typeof isRaining);
+
+var undef;
+console.log(undef);
+console.log(typeof undef);
+
+var memories = null;
+console.log(memories);
+console.log(typeof memories);
+
+var bigNum = 489348983490234903902349802347345903450234823490234n;
+console.log(bigNum);
+console.log(typeof bigNum);
+
+var mySymbol = Symbol("unique");
+console.log(mySymbol);
+console.log(typeof mySymbol);
+
+var str = 10;
+console.log(str);
+console.log(typeof str);
+console.log(typeof String(str));
+console.log(typeof str.toString());
+console.log(typeof (str + ""));
+
+// Truty or Falsy value
+var myDay = "";
+if (myDay) {
+    console.log("This is a truthy value");
+} else {
+    console.log("This is a falsy value");
+}
+
+//* ========== parseInt & parseFloat Section ==========
+
+var myString = "123.45";
+var myInt = parseInt(myString);
+console.log(myInt); // Output: 123
+
+var myString = "123.45";
+var myInt = parseFloat(myString);
+console.log(myInt);
+
+console.log(parseInt("123")); // 123
+console.log(parseInt("123", 10)); // 123
+console.log(parseInt("   123 ")); // 123
+console.log(parseInt("077")); // 77
+console.log(parseInt("1.9")); // 1
+
+console.log(parseFloat("123")); // 123
+console.log(parseFloat("123", 10)); // 123
+console.log(parseFloat("   123 ")); // 123
+console.log(parseFloat("077")); // 77
+console.log(parseFloat("1.9")); // 1.9
+
+console.log(parseInt("@123")); // NaN
+console.log(parseInt("-123")); // -123
+console.log(parseInt("xyz")); // NaN
+
+console.log(isNaN("raj")); // true
+console.log(isNaN("123")); // false
+
+if(NaN == NaN) {
+    console.log("both are equal");
+} else {
+    console.log("not equal");
+}
+
+// More on data types
+console.log(10 + "20"); // "1020" (string concatenation)
+console.log(9 - "5");
+console.log("Java" + "Script"); // "JavaScript" (string concatenation)
+console.log("" + "");
+console.log("" + o);
+console.log("vinod" - "thapa");
+console.log(true + true); // 2 (boolean to number conversion)
+console.log(true + false); // 1 (boolean to number conversion)
+console.log(false + false); // 0 (boolean to number conversion)

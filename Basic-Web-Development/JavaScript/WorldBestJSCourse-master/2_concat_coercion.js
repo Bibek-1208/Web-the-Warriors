@@ -20,14 +20,36 @@
 //* ============================
 //* Tricky Interview Questions
 //* ============================
-// console.log(10 + "20");
-// console.log(9 - "5");
-// console.log("Java" + "Script");
-// console.log(" " + " ");
-// let sum = " " + 0;
-// console.log(typeof sum);
-// console.log("vinod" - "thapa");
-// console.log(true + true);
-// console.log(true + false);
-// console.log(false + true);
-// console.log(false - true);
+console.log(10 + "20");
+console.log(9 - "5");
+console.log("Java" + "Script");
+console.log(" " + " ");
+let sum = " " + 0;
+console.log(typeof sum);
+console.log("vinod" - "thapa");
+console.log(true + true);
+console.log(true + false);
+console.log(false + true);
+console.log(false - true);
+
+//* ============================
+//* My Work Section
+//* ============================
+
+// Concatenation
+const str = "Hello" + "Raj";
+const str2 = "Hello " + "Raj " + "Kishore " + "Behera";
+
+console.log(str);
+console.log(str2);
+
+// Type coercion / (type casting) - 2 -> implicit, explicit
+let min = "Raj" - 5;
+console.log(min); // NaN (Not a Number)
+
+let min2 = "5" - 5;
+console.log(min2); // 0 (Number)
+
+let min3 = "5" + 5;
+console.log(min3); // "55" (String)
+
