@@ -466,8 +466,21 @@ console.log(gun[5]);
 console.log(gun[8]);
 
 // add element in aan array
+console.log("add element");
 gun.push("p90");
 gun.push("m14");
+console.log(gun);
+
+// delete element in aan array
+console.log("delete element");
+gun.pop();
+gun.pop("ak47");
+console.log(gun);
+
+// add element on first element in aan array
+console.log("add element at first");
+gun.unshift("sukoi");
+gun.unshift("rafel");
 console.log(gun);
 
 // Modifying elements in an array
@@ -519,3 +532,89 @@ fruits.map((curElem, index, arr) => {
 
 
 //todo Practice Time
+
+console.log(fruits);
+// splice method
+console.log(fruits.splice(1));
+
+console.log(fruits);
+
+// a little bit remain to complete on splice
+
+
+
+//* searching in an array
+
+const  number = [10, 20, 30, 40, 50, 20];
+console.log(number);
+
+console.log(number.indexOf(40));
+console.log(number.indexOf(40, 1));
+console.log(number.indexOf(40, 6));
+
+console.log(number.indexOf(20));
+
+console.log(number.lastIndexOf(20));
+
+console.log(number.lastIndexOf(20, 4));
+
+
+// includes
+console.log(number.includes(20));
+console.log(number.includes(90));
+
+
+//! code challenge
+
+const months = ["Jan", "march", "April", "June", "July"];
+
+//? 1: Add Dec at the end of an array?
+
+months.push("Dec");
+console.log(months);
+
+//? 2: What is the return value of splice method?
+
+months.splice();
+// it's an empty array
+console.log(months);
+
+//? 3: Update march to March (update)?
+
+const indexToUpdate = months.indexOf("march");
+months.splice(indexToUpdate, 1, "March");
+console.log(months);
+
+//? 4: Delete June from an array?
+
+const indexToDelete = months.indexOf("June");
+months.splice(indexToDelete, 1);
+console.log(months);
+
+
+//* Filter in an Array
+
+
+// not completed yet much more remain
+
+
+
+// small overview of object
+const product = [
+  {name: "Laptop", price: 80000},
+  {name: "Phone", price: 60000},
+  {name: "Tablet", price: 50000},
+  {name: "SmartWatch", price: 10000}
+];
+
+const filterProducts = product.filter((curElem) => {
+  return curElem.price >= 50000;
+});
+
+console.log(filterProducts);
+
+// unique value
+const Number = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+let uniqueValues = Number.filter((curElem, index, arr) => {
+  console.log(arr[index]);
+});
