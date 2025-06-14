@@ -324,3 +324,74 @@ const pangramChecker = (str) => {
 };
 
 console.log(pangramChecker("The quick  @ brown fox jumps ove the lazy dog"));
+
+
+
+//* ============================
+//* My Work Section
+//* ============================
+
+//? length: Property
+const str = "Hello, World!";
+console.log(str.length);
+
+
+//* Escape Character
+
+let text = 'My name is " Thapa Technical " & I am a Full Stack Developer.';
+
+let text2 = "My name is ' Thapa Technical ' & I am a Full Stack Developer.";
+
+// use esc char
+let text3 = "My name is ' Thapa Technical ' & I am a \"Full Stack \" \"Developer.\" ";
+console.log(text3);
+
+
+//* String Search Methods
+
+let text4 =  "Rajkishore Behere";
+console.log(text4.indexOf("kishore"));
+console.log(text4.indexOf("kishore", 1));
+
+let strArr = Array.from(text4);
+console.log(strArr);
+
+// map
+
+
+//? b: lastIndexOf() : The lastIndexOf() method 
+
+console.log(text4.lastIndexOf("kishore"));
+console.log(text4.lastIndexOf("kishore", 10));
+
+
+//? c:  search(): The search() method
+
+//! it's note completed fully
+
+let serText = "Hello, i am rajkishore welcomming you to my world";
+console.log(serText.search(/welcomming/));
+
+
+//? match() :
+
+let matchText = "Hello JavaScript, welcome to our world best JavaScript course";
+
+console.log("It's a match method");
+
+console.log(matchText.match("welcome"));
+console.log(matchText.match("world"));
+console.log(matchText.match("course"));
+
+
+
+//? matchAll() :
+console.log("It's a matchall method");
+
+console.log(matchText.matchAll("welcome"));
+console.log(matchText.matchAll("world"));
+console.log(matchText.matchAll("course"));
+
+
+//? includes():
+
