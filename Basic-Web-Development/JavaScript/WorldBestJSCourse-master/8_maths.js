@@ -77,3 +77,76 @@
 //? Math.random(): Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
 
 console.log((Math.random() * 100).toFixed(3));
+
+
+
+//* ============================
+//* My Work Section
+//* ============================
+
+
+//* - Math.PI:
+
+const piValue = Math.PI;
+console.log(piValue);
+
+
+//* 2. Basic Operations:
+
+//? Math.abs():
+console.log(Math.abs(5));
+console.log(Math.abs(-115));
+
+//? Math.round():
+console.log(Math.round(4.9));
+console.log(Math.round(4.4));
+
+//? Math.ceil():
+console.log(Math.ceil(4.9));
+console.log(Math.ceil(4.4));
+
+//? Math.floor():
+console.log(Math.floor(4.9));
+console.log(Math.floor(4.4));
+
+//? Math.trunc(x):
+console.log(Math.trunc(4.9));
+console.log(Math.trunc(4.4));
+
+const truncValue = Math.trunc(3.7);
+console.log(truncValue);
+
+// ! comp b/w flore & trunc
+console.log(Math.trunc(-3.7));
+console.log(Math.floor(-3.7));
+
+//? Math.pow():
+console.log(Math.pow(2, 5));
+
+// ecmaScript 2015 - ES6
+console.log(2 ** 5);
+
+
+//? Math.sqrt():
+console.log(Math.sqrt(25));
+
+//? Math.log():
+console.log(Math.log(1));
+console.log(Math.log(2));
+
+//? Math.log2():
+console.log(Math.log2(8));
+
+//? Math.random():
+console.log(Math.random());
+console.log(parseInt(Math.random() * 100));
+console.log((Math.random() * 100).toFixed(3));
+
+
+const valueCheck = Math.random();
+console.log(valueCheck);
+console.log(valueCheck * 100);
+console.log(parseInt(valueCheck * 100));
+console.log((valueCheck * 100).toFixed(2));
+
+// done
