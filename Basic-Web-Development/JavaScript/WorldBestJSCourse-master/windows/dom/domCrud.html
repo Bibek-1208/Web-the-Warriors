@@ -22,35 +22,63 @@
     <div>
       <h1>Simple DOM Todo App</h1>
       <input type="text" id="inputField" />
+      
       <button class="btn">click me</button>
-      <div class="todoListsElem"></div>
+
+      <div class="todoListsElem">
+        <!-- <p id="todoList"></p> -->
+      </div>
     </div>
     <script>
+      // let inputElem = document.getElementById("inputField");
+      // let clickBtn = document.querySelector(".btn");
+      // let todoElem = document.querySelector(".todoListsElem");
+      // // let todoFirst = document.getElementById("todoFirst");
+
+      // const addTodo = () => {
+      //   console.log(inputElem.value);
+      //   // todoFirst.textContent = inputElem.value;
+      //   let pElem = document.createElement("p");
+      //   pElem.textContent = inputElem.value;
+      //   console.log(pElem);
+      //   todoElem.append(pElem);
+
+      //   inputElem.value = "";
+      // };
+
+      // clickBtn.addEventListener("click", () => {
+      //   addTodo();
+      // });
+
+      // todoElem.addEventListener("click", (event) => {
+      //   console.log(event.target);
+      //   let currentElem = event.target;
+      //   currentElem.remove();
+      // });
+
+
+
+      // my work
       let inputElem = document.getElementById("inputField");
       let clickBtn = document.querySelector(".btn");
       let todoElem = document.querySelector(".todoListsElem");
-      // let todoFirst = document.getElementById("todoFirst");
+      // let todoList = document.getElementById("todoList");
 
       const addTodo = () => {
-        console.log(inputElem.value);
-        // todoFirst.textContent = inputElem.value;
+        // let inputValue = inputElem.value;
+        // todoList.textContent = inputValue;
         let pElem = document.createElement("p");
         pElem.textContent = inputElem.value;
         console.log(pElem);
         todoElem.append(pElem);
-
-        inputElem.value = "";
       };
+
 
       clickBtn.addEventListener("click", () => {
         addTodo();
       });
 
-      todoElem.addEventListener("click", (event) => {
-        console.log(event.target);
-        let currentElem = event.target;
-        currentElem.remove();
-      });
+
     </script>
   </body>
 </html>
