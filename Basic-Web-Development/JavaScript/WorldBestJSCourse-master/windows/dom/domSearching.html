@@ -80,9 +80,42 @@ querySelectorAll(selector) -->
       //   (findElementByQuerySelector.innerText = "World Best JS Course")
       // );
 
+      // const findElementByQuerySelectorAll = document.querySelectorAll("li");
+      // console.log(findElementByQuerySelectorAll);
+      // findElementByQuerySelectorAll.forEach((curElem) => console.log(curElem));
+
+
+      // my work
+      let findElemById = document.getElementById("heading");
+      console.log(findElemById);
+      console.log(findElemById.innerHTML);
+      console.log(findElemById.innerText);
+      console.log(findElemById.textContent);
+
+      // i donm't what is this
+      // console.log(findElemById.isConnected);
+
+
+      let findElemByClass = document.getElementsByClassName("list-of--nodes");
+      console.log(...findElemByClass);
+
+      for (let elem of findElemByClass) {
+        console.log(elem);
+        console.log(elem.innerHTML);
+        console.log(elem.innerText);
+        console.log(elem.textContent);
+      }
+
+      const findElementByQuerySelector = document.querySelector("#heading");
+      console.log(findElementByQuerySelector.innerText = "Hello World!");
+
       const findElementByQuerySelectorAll = document.querySelectorAll("li");
       console.log(findElementByQuerySelectorAll);
-      findElementByQuerySelectorAll.forEach((curElem) => console.log(curElem));
+
+      for (const element of findElementByQuerySelectorAll) {
+        // console.log(element);
+        console.log(element.innerText);
+      }
     </script>
   </body>
 </html>

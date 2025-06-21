@@ -1,15 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>Javascript</title>
-  </head>
-  <body>
-    <h1>Best JS Course</h1>
-    <p>DOM Tree Structure</p>
-  </body>
-</html>
- -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,25 +16,64 @@
 
     <!-- * Let's see DOM Navigation -->
     <script>
+      // let parent = document;
+      // let htmlBody = document.body;
+      // let htmlHead = document.head;
+
+      // // let bodyChild = htmlBody.childNodes;
+      // let bodyChild = htmlBody.children;
+
+      // let firstChild = htmlBody.firstElementChild;
+      // // let firstChild = htmlBody.firstChild;
+
+      // // let lastChild = htmlBody.lastChild;
+
+      // let nextSibling = firstChild.nextElementSibling;
+
+      // let previousSibling = nextSibling.previousElementSibling;
+
+      // let parentNode = previousSibling.parentElement;
+
+      // console.log(parentNode);
+
+
+      // my work
       let parent = document;
-      let htmlBody = document.body;
-      let htmlHead = document.head;
+      let bodyElem = document.body;
+      let headElem = document.head;
 
-      // let bodyChild = htmlBody.childNodes;
-      let bodyChild = htmlBody.children;
+      // nodeList
+      let bodyChild = bodyElem.childNodes;
+      let headChild = headElem.childNodes;
 
-      let firstChild = htmlBody.firstElementChild;
-      // let firstChild = htmlBody.firstChild;
+      // HTML Collection
+      let bodyChildren = bodyElem.children;
+      let headChildren = headElem.children;
 
-      // let lastChild = htmlBody.lastChild;
+      // first & last Child (HTML Collection)
+      let firstElemChild = bodyElem.firstElementChild;
+      let lastElemChild = bodyElem.lastElementChild;
+       
+      // first & last ElementChid (nodeList)
+      let firstChild = bodyElem.firstChild;
+      let lastChild = bodyElem.lastChild;
 
-      let nextSibling = firstChild.nextElementSibling;
+      //? nextSibling / nextElementSibling:
+      let nextSibling = firstElemChild.nextSibling;
+      let nextElementSibling = firstElemChild.nextElementSibling;
 
-      let previousSibling = nextSibling.previousElementSibling;
+      //? previousSibling / previousElementSibling:
+      let previousSibling = nextSibling.previousSibling;
+      let previousElementSibling = nextElementSibling.previousElementSibling;
 
-      let parentNode = previousSibling.parentElement;
+      //? closest(selector):
+      let closestElem = previousElementSibling.closest; //it showes undefine
 
-      console.log(parentNode);
+      //? parentNode / parentElement:
+      let parentNode = firstChild.parentNode;
+      let parentElement = firstElemChild.parentElement;
+
+      console.log(parentElement);
     </script>
   </body>
 </html>
