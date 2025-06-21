@@ -57,8 +57,8 @@
 // Returns the user agent string of the browser.
 // Example: console.log(navigator.userAgent).
 
-//? navigator.language (Property):
-// Returns the language preference of the user's browser.
+//? navigator.language (Property):urns the language preference of the
+// Ret user's browser.
 // Example: console.log(navigator.language).
 
 //? navigator.cookieEnabled (Property):
