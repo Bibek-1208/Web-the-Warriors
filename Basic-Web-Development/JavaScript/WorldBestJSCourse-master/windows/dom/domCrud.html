@@ -71,6 +71,7 @@
         pElem.textContent = inputElem.value;
         console.log(pElem);
         todoElem.append(pElem);
+        inputElem.value = "";
       };
 
 
@@ -78,6 +79,10 @@
         addTodo();
       });
 
+      todoElem.addEventListener("click", (event) => {
+        let currentElem = event.target;
+        currentElem.remove();
+      });
 
     </script>
   </body>
