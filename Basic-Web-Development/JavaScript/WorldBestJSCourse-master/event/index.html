@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Basic-Web-Development/JavaScript/WorldBestJSCourse-master/windows/style.css" />
+  </head>
+  <body>
+    <!-- ========= start inline event ========= -->
+
+    <h1>Inline Event</h1>
+
+    <button onclick="alert('Wellcome On Click')">On Click</button>
+
+    <button ondblclick="alert('Wellcome On Double Click')">On Mouse Over</button>
+
+    <button onmouseover="alert('Wellcome On Mouse Over')">Mouse Over</button>
+
+    <button onmouseout="alert('Wellcome On Mouse Out')">Mouse Out</button>
+
+    <button onmousedown="alert('Wellcome On Mouse Down')">Mouse Down</button>
+
+    <button onmouseup="alert('Wellcome On Mouse Up')">Mouse Up</button>
+
+    <button oncontextmenu="alert('Wellcome On Context Menu')">Context Menu</button>
+
+    <button onfocus="alert('Wellcome On Focus')">Focus</button>
+
+    <button onblur="alert('Wellcome On Blur')">Blur</button>
+
+    <!-- ========= End Inline Event ========= -->
+
+    <!-- ========= start Dom Event Handler  ========= -->
+
+     <h1>Dom Event Handler</h1>
+
+    <button id="byBtn">On Click</button>
+
+    <button id="byBtn1">greeting again</button>
+
+    <button id="byBtn2">Mouse Over</button>
+
+    <button id="byBtn3">Mouse Out</button>
+
+    <button id="byBtn4">Mouse Down</button>
+
+    <button id="byBtn5">Mouse Up</button>
+
+    <button id="byBtn6">Context Menu</button>
+
+    <button id="byBtn7">Focus</button>
+
+    <button id="byBtn8">Blur</button>
+
+    <!-- ========= End Dom Event Handler ========= -->
+
+    <!-- ========= start addEventListener Event Handler ========= -->
+
+     <h1>addEventListener Event Handler</h1>
+
+    <button id="byBtn9">greeting</button>
+
+    <button id="byBtn10">greeting again</button>
+
+    <!-- ========= End addEventListener Event Handler ========= -->
+
+    <script>
+        document.getElementById("byBtn").onclick = () => {
+            alert("Wellcome On Click by Callback Function");
+        };
+
+        document.getElementById("byBtn1").ondblclick = () => {
+            alert("Wellcome On Double Click by Callback Function");
+        };
+
+        document.getElementById("byBtn2").onmouseover = () => {
+            alert("Wellcome On Mouse Over by Callback Function");
+        };
+
+        document.getElementById("byBtn3").onmouseout = () => {
+            alert("Wellcome On Mouse Out by Callback Function");
+        };
+
+        document.getElementById("byBtn4").onmousedown = () => {
+            alert("Wellcome On Mouse Down by Callback Function");
+        };
+
+        document.getElementById("byBtn5").onmouseup = () => {
+            alert("Wellcome On Mouse Up by Callback Function");
+        };
+
+        document.getElementById("byBtn6").oncontextmenu = () => {
+            alert("Wellcome On Context Menu by Callback Function");
+        };
+
+        document.getElementById("byBtn7").onfocus = () => {
+            alert("Wellcome On Focus by Callback Function");
+        };
+
+        document.getElementById("byBtn8").onblur = () => {
+            alert("Wellcome On Blur by Callback Function");
+        };
+
+        // start Dom Event Handler
+
+        document.getElementById("byBtn9").addEventListener("click", () => {
+            alert("Wellcome to Click by addEventListener");
+        });
+
+        document.getElementById("byBtn10").addEventListener("mouseover", () => {
+            alert("Wellcome to mouseover by addEventListener");
+        });
+    </script>
+  </body>
+</html>
