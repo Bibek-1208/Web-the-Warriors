@@ -1,0 +1,59 @@
+<!-- note done yet -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <link rel="stylesheet" href="/Basic-Web-Development/JavaScript/WorldBestJSCourse-master/windows/style.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Urbanist', sans-serif;
+        }
+        .myBtn {
+            width: 20rem;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+        .myBtn:hover {
+            background-color: #45a049;
+        }
+
+        .rectangle {
+            width: 20rem;
+            height: 20rem;
+            background-color: #2196F3;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle"></div>
+    <button class="myBtn">Click Me</button>
+
+    <!-- scripting --> 
+    <script>
+        // get refrence
+        let byBtn = document.getElementById("byBtn");
+        let rectDiv = document.querySelector(".rectangle");
+
+        const handelMouseEvent = () => {
+            console.log("click");
+            rectDiv.style.backgroundColor = "#f5ee62";
+        };
+    </script>
+</body>
+</html>
