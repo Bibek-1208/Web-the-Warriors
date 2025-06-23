@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Basic-Web-Development/JavaScript/WorldBestJSCourse-master/windows/style.css" />
+</head>
+<body>
+    <div>
+        <input type="text" name="input" id="myInput" placeholder="Type something here..." />
+        <div class="output">
+            <p class="KeyPressed">KeyPressed:</p>
+            <p class="keyCode">Key Code:</p>
+            <p class="charCode">Char COde:</p>
+            <p class="eventType">Event Type:</p>
+        </div>
+    </div>
+
+    <!-- script Section -->
+    <script>
+        const input = document.getElementById('myInput');
+        const keyPressed = document.querySelector('.KeyPressed');
+        const keyCode = document.querySelector('.keyCode');
+        const charCode = document.querySelector('.charCode');
+        const eventType = document.querySelector('.eventType');
+
+        input.addEventListener('keydown', () => {
+            keyPressed.textContent = `Key Pressed: ${input.value}`;
+            keyCode.textContent = `Code of Key: ${event.key}`;
+            charCode.textContent = `Code Char: ${event.code}`;
+            eventType.textContent = `Event Type: ${event.type}`;
+        });
+        // done
+    </script>
+</body>
+</html>
