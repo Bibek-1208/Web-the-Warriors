@@ -17,10 +17,135 @@
     <button onclick="alert('Welcome, hello world!')">Welcome</button>
 
     <!-- internal style  -->
+
+    <!-- date display1 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format:new Date()</h3>
+    <p id="date"></p>
+
+    <!-- date display2 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format: new Date(date string)</h3>
+    <p id="date1"></p>
+
+    <!-- date display3 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format: new Date(year,month)</h3>
+    <p id="date2"></p>
+
+    <!-- date display4 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format: new Date(year,month,day)</h3>
+    <p id="date3"></p>
+
+
+    <!-- date display5 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format: new Date(year,month,day,hours)</h3>
+    <p id="date4"></p>
+
+
+    <!-- date display6 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format: new Date(year,month,day,hours,minutes)</h3>
+    <p id="date5"></p>
+
+
+    <!-- date display7 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format: new Date(year,month,day,hours,minutes,seconds)</h3>
+    <p id="date6"></p>
+
+
+    <!-- date display8 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format: new Date(year,month,day,hours,minutes,seconds,ms)</h3>
+    <p id="date7"></p>
+
+
+    <!-- date display9 -->
+    <h2>Current Date and Time</h2>
+    <h3>Display Format: new Date(milliseconds) </h3>
+    <p id="date8"></p>
+
     <script>
       // alert("Welcome, eoseo");
       console.log("Plz subscribe, like share & comment ");
+
+      // date
+      // const date = () => {
+      //   const d = new Date();
+      //   return d.toLocaleString("en-US", {
+      //     weekday: "long",
+      //     year: "numeric",
+      //     month: "long",
+      //     day: "numeric",
+      //     hour: "2-digit",
+      //     minute: "2-digit",
+      //     second: "2-digit",
+      //   });
+      // }
+      // console.log(date);
+
+      // document.getElementById("date").innerHTML = date();
+
+
+      // document.getElementById("date").innerHTML = new Date().toLocaleString("en-US", {
+      //   weekday: "long",
+      //   year: "numeric",
+      //   month: "long",
+      //   day: "numeric",
+      //   hour: "2-digit",
+      //   minute: "2-digit",
+      //   second: "2-digit",
+      // });
+
+
+      //? Current date and time
+      document.getElementById("date").innerHTML =  new Date();
+
+      //? 2: new Date(dateString):
+      document.getElementById("date1").innerHTML = new Date("2023-10-01T12:00:00Z");
+
+
+      //? 3: new Date(year, month):
+      const year = 2023;
+      const month = 9; // October (months are 0-indexed in JavaScript)
+      document.getElementById("date2").innerHTML = new Date(2024, 1);
+
+
+      //? 4: new Date(year, month, day):
+      document.getElementById("date3").innerHTML = new Date(year, month, day = 6); // 1st day of October
+
+
+      //? 5: new Date(year, month, day, hours):
+      const hours = 10; // 10 AM
+      document.getElementById("date4").innerHTML = new Date(year, month, day = 9, hours);
+
+
+      //? 6: new Date(year, month, day, hours, minutes):
+      const minutes = 30; // 30 minutes past the hour
+      document.getElementById("date5").innerHTML = new Date(year, month, day = 9, hours, minutes);
+
+
+      //? 7: new Date(year, month, day, hours, minutes, seconds):
+
+      const seconds = 45; // 45 seconds past the minute
+      document.getElementById("date6").innerHTML = new Date(year, month, day = 9, hours, minutes, seconds);
+
+
+      //? 8: new Date(year, month, day, hours, minutes, seconds, ms):
+      const ms = 500; // 500 milliseconds
+      document.getElementById("date7").innerHTML = new Date(year, month, day = 9, hours, minutes, seconds, ms);
+
+
+
+      //? 9: new Date(milliseconds):
+      const milliseconds = 1735689600000; // Example timestamp
+      document.getElementById("date8").innerHTML = new Date(milliseconds);
+
+
     </script>
-    <script src="6_arrays.js"></script>
+    <script src=""></script>
   </body>
 </html>
