@@ -77,3 +77,22 @@
 // setTimeout(() => {
 //   clearInterval(intervalID);
 // }, 5000);
+
+
+//* ============================
+//* My Work Section
+//* ============================
+
+//* 1. setTimeout:
+function delay(x) {
+    console.log("This function was delayed by 2000 milliseconds (2 seconds).", x);
+}
+// setTimeout(delay, 2000);
+// setTimeout(() => delay(5), 2000);
+
+//* 2. setInterval:
+function repeat() {
+    console.log("This function will be repeated every 1000 milliseconds (1 second).");
+}
+
+setInterval(repeat, 1000);
