@@ -77,3 +77,55 @@
 // setTimeout(() => {
 //   clearInterval(intervalID);
 // }, 5000);
+
+
+//* ============================
+//* My Work Section
+//* ============================
+
+//* 1. setTimeout:
+function delay(x) {
+    console.log("This function was delayed by 2000 milliseconds (2 seconds).", x);
+}
+// setTimeout(delay, 2000);
+// setTimeout(() => delay(5), 2000);
+
+//* 2. setInterval:
+function repeat() {
+    console.log("This function will be repeated every 1000 milliseconds (1 second).");
+}
+
+// setInterval(repeat, 1000);
+
+
+//* 3. clearTimeout:
+function delayedFunction() {
+    console.log("This function was delayed by 2000 milliseconds (2 seconds).");
+}
+// const myWork = setTimeout(delayedFunction, 2000);
+
+// clearTimeout(myWork);
+
+
+//* 4. clearInterval:
+function repeatedFunction() {
+    console.log("This function repeats every 1000 milliseconds (1 second).");
+}
+// const intervalID = setInterval(repeatedFunction, 1000);
+// clearInterval(intervalID);
+
+
+
+//* ============================
+//* Challenge Time
+//* ============================
+const functionRepeat = () => {
+    console.log("This function repeats every 1000 milliseconds (1 second)");
+}
+
+// setInterval(functionRepeat, 1000);
+
+// setTimeout(() => {
+//     clearInterval(setInterval(functionRepeat, 1000));
+//     console.log("Interval cleared after 5 seconds.");
+// }, 5000);

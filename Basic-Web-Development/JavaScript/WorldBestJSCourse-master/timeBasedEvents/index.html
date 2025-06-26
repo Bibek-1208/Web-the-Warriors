@@ -98,17 +98,30 @@
     </div>
 
     <script>
-      const currentTime = () => {
-        let curTime = new Date().toLocaleTimeString();
-        document.getElementById("clock").innerText = curTime;
-      };
-      currentTime();
+      // const currentTime = () => {
+      //   let curTime = new Date().toLocaleTimeString();
+      //   document.getElementById("clock").innerText = curTime;
+      // };
+      // currentTime();
 
-      const intervalId = setInterval(() => {
-        currentTime();
+      // const intervalId = setInterval(() => {
+      //   currentTime();
+      // }, 1000);
+
+      // setTimeout(() => clearInterval(intervalId), 5000);
+
+
+      // my working code
+
+      // const currTime = document.getElementById('clock').innerText = new Date().toLocaleTimeString();
+
+      setInterval(() => {
+        document.getElementById('clock').innerText = new Date().toLocaleTimeString();
       }, 1000);
 
-      setTimeout(() => clearInterval(intervalId), 5000);
+      setTimeout(() => {
+        document.getElementById('clock').innerText = 'Time is up!';
+      }, 6000);
     </script>
   </body>
 </html>
