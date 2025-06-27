@@ -372,3 +372,61 @@ const arrayToObj = (arr) => {
 
 console.log(arrayToObj(inputArray));
 // Should print: { '1': { id: 1, name: 'Alice' }, '2': { id: 2, name: 'Bob' }, '3': { id: 3, name: 'Charlie' } }
+
+
+
+//* ============================
+//* My Work Section
+//* ============================
+
+//* Creating Objects:
+const item = {
+  id: 1,
+  name: "watch",
+  price: 220,
+  category: "accessories",
+  brand: "Rolex",
+  stock: 100,
+  description: "Luxury watch with a stainless steel case and leather strap.",
+  image: "image link will be added during projects",
+  getDetails: function () {
+    return `Item: ${this.name}, Price: $${this.price}, Category: ${this.category}`;
+  },
+};
+
+
+//* Accessing Properties:
+console.log(item.name); // Accessing using dot notation
+console.log(item["price"]); // Accessing using bracket notation
+
+//* Adding and Modifying Properties:
+item.stock = 90; // Modifying existing property
+item.discount = 10; // Adding new property
+console.log(item);
+
+// dynamic key - refer code line : 60
+
+//* Methods:
+console.log(item.getDetails()); // Calling the method to get item details
+
+//* Data Modeling:
+let car = {
+  brand: "tesela",
+  model: "model S",
+  year: 2023,
+  start: function () {
+    console.log("Engine started!");
+  },
+};
+
+car.start(); // Calling the method to start the car
+
+
+//* JSON Example:
+let jsonData = JSON.stringify(item);
+console.log(jsonData); // Convert object to JSON string
+
+let parsedObject = JSON.parse(jsonData);
+console.log(parsedObject); // Convert JSON string back to object
+
+//* "this" Example:
