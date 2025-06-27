@@ -1,6 +1,81 @@
-{
-    "id" : "01",
-    "name": "iphone",
-    "cetagory": "mobile",
-    "description": "iphone 16 pro max"
-}
+[
+    {
+        "id" : "01",
+        "name": "iphone",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+
+    {
+        "id" : "02",
+        "name": "basketball",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+
+    {
+        "id" : "03",
+        "name": "t-shart",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+
+    {
+        "id" : "04",
+        "name": "S",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+
+    {
+        "id" : "05",
+        "name": "iphone",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+
+    {
+        "id" : "06",
+        "name": "iphone",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+    
+    {
+        "id" : "07",
+        "name": "iphone",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+
+    
+    {
+        "id" : "08",
+        "name": "iphone",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+
+    {
+        "id" : "09",
+        "name": "iphone",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    },
+    {
+        "id" : "10",
+        "name": "iphone",
+        "brand": "",
+        "cetagory": "mobile",
+        "description": "iphone 16 pro max"
+    }
+]
