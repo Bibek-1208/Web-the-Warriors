@@ -36,6 +36,10 @@ function checkData(){
 
     alert("Form submitted successfully!");
     return true;
+
+    // clear the form after operation
+    uEmail = "";
+    uPassword = "";
 }
 
 function loginWithGoogle() {
