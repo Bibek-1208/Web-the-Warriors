@@ -1,27 +1,62 @@
 const fs = require("fs");
 
 const requestHandler = (req, res) => {
-    console.log(req.url, req.method);
+  console.log(req.url, req.method);
 
-    if (req.url === "/") {
-        res.writeHead(200, { "content-type": "text/html" });
-        res.write(`
-            <html>
-                <head>
-                    <title>Home</title>
-                </head>
-                <body>
-                    <h1>Wellcome to Home</h1>
-                    <ul>
-                        <li><a href="/calculator">Calculator</a></li>
-                    </ul>
-                </body>
-            </html>
-        `);
-        return res.end();
-    } else if (req.url.toLowerCase() === "/calculator") {
-        res.writeHead(200, { "content-type": "text/html" });
-        res.write(`
+  if (req.url === "/") {
+    res.writeHead(200, { "content-type": "text/html" });
+    res.write(`
+        <html>
+            <head>
+                <title>Home</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background: #f4f4f9;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+                    .container {
+                        background: #fff;
+                        padding: 40px;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                        text-align: center;
+                    }
+                    h1 {
+                        color: #333;
+                        margin-bottom: 20px;
+                    }
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: white;
+                        background: #4CAF50;
+                        padding: 12px 24px;
+                        border-radius: 6px;
+                        font-size: 16px;
+                        transition: background 0.3s;
+                    }
+                    a:hover {
+                        background: #45a049;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Welcome to Home</h1>
+                    <a href="/calculator">Go to Calculator</a>
+                </div>
+            </body>
+        </html>
+    `);
+    return res.end();
+  } else if (req.url.toLowerCase() === "/calculator") {
+    res.writeHead(200, { "content-type": "text/html" });
+    res.write(`
             <html>
                 <head>
                     <title>Calculator</title>
@@ -50,31 +85,28 @@ const requestHandler = (req, res) => {
             </html>
         `);
 
-        return res.end();
+    return res.end();
+  } else if (req.url.toLowerCase() === "/submit" && req.method == "POST") {
+    const body = [];
+    req.on("data", (chunk) => {
+      console.log(chunk);
+      body.push(chunk);
+    });
 
-    } else if (req.url.toLowerCase() === '/submit' && req.method == 'POST') {
+    req.on("end", () => {
+      const fullBody = Buffer.concat(body).toString();
+      console.log(fullBody);
+      const params = new URLSearchParams(fullBody);
+      const num1 = parseFloat(params.get("num1"));
+      const num2 = parseFloat(params.get("num2"));
 
-        const body = [];
-        req.on('data', (chunk) => {
-            console.log(chunk);
-            body.push(chunk);
-        });
+      const calculateSum = (a, b) => a + b;
+      const result = calculateSum(num1, num2);
 
-        req.on('end', () => {
+      console.log(calculateSum(num1, num2));
 
-            const fullBody = Buffer.concat(body).toString();
-            console.log(fullBody);
-            const params = new URLSearchParams(fullBody);
-            const num1 = parseFloat(params.get('num1'));
-            const num2 = parseFloat(params.get('num2'));
-
-            const calculateSum = (a, b) => a + b;
-            const result = calculateSum(num1, num2);
-
-            console.log(calculateSum(num1, num2));
-
-            res.writeHead(200, { "content-type": "text/html" });
-            res.write(`
+      res.writeHead(200, { "content-type": "text/html" });
+      res.write(`
             <html>
                 <head>
                     <title>Result</title>
@@ -88,12 +120,11 @@ const requestHandler = (req, res) => {
                 </body>
             </html>
         `);
-            return res.end();
-        });
-
-    } else {
-        res.writeHead(200, { "content-type": "text/html" });
-        res.write(`
+      return res.end();
+    });
+  } else {
+    res.writeHead(200, { "content-type": "text/html" });
+    res.write(`
         <html>
             <head>
                 <title>404</title>
@@ -103,8 +134,8 @@ const requestHandler = (req, res) => {
             </body>
         </html>
     `);
-        return res.end();
-    }
+    return res.end();
+  }
 };
 
 module.exports = requestHandler;
