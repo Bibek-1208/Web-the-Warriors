@@ -24,7 +24,25 @@ for(i; i<=49; i++){
 
 // WRITE A FUNCTION isprime() WHICH WILL RETURN "TRUE" IF THE NUMBER IS PRIME.
 
-const isprime = (n) => {
-    if(num < 2) return false
-    
+// const isprime = (n) => {
+//     if(num < 2) return false
+
+// }
+
+
+// WRITE A FUNCTION WHICH WILL COUNT HOW MANY TIMES IT HAS BEEN CALLED
+
+const createCounter = () =>{
+    let count = 0;
+
+    return function(){
+        count++
+        console.log(`function called ${count} times`)
+        return count
+    }
 }
+const counter = createCounter()
+
+counter()
+counter()
+counter()
