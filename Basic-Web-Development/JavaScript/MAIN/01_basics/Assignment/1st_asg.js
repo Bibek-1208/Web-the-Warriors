@@ -46,3 +46,12 @@ const counter = createCounter()
 counter()
 counter()
 counter()
+
+// WRITE A FUNCTION TO COUNT VOWELS IN A WORD
+
+
+// STORE AND PRINT ADDRESS 
+
+// a:1, b:2 | b:2,c:3 | c:5, d:6
+
+let a=1, b=2, c=3
