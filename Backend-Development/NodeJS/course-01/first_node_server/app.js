@@ -1,16 +1,10 @@
-const http = require('http');
+const http = require("http");
 
-const server = http.createServer((req, res) => {
-    console.log(req.url, req.method, req.headers);
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<html>');
-    res.write('<head><title>My First Page</title></head>');
-    res.write('<body><h1>Hello from my Node.js Server!</h1></body>');
-    res.write('</html>');
-    res.end();
-});
+const appImport = require('./user_handler');
+
+const server = http.createServer(appImport);
 
 const PORT = 3000;
 server.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
