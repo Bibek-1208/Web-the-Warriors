@@ -142,26 +142,27 @@ console.log(oddNumbers);  */
 
 
 
-
-/*               //vowelchecker
-function count(str){
+/*
+               //vowelchecker
+function count(raj){
   const vowel = "aeiouAEIOU";
   let c = 0;
-  for(let i = 0; i< str.length; i++){
-  if(vowel.includes(str[i])){
+  for(let i = 0; i< raj.length; i++){
+  if(vowel.includes(raj[i])){
     c++;
   }
   }
   return count;
 }
 
-function countvowel(str) {
-    return str.match(/[aeiou]/gi)?.length || 0;
+function countvowel(raj) {
+    return raj.match(/[aeiou]/gi)?.length || 0;
 }
 
-console.log(countvowel("BIBEK"));*/
+console.log(countvowel("BIBEK")); */
 
 
 
 
 
+   
